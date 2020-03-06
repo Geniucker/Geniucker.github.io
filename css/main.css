@@ -1003,7 +1003,7 @@ pre .javascript .function {
   border-bottom: none;
   color: var(--brand-color);
   display: inline-block;
-  line-height: 1.375em;
+  line-height: 2.27em;
   padding: 0 40px;
   position: relative;
 }
@@ -1013,7 +1013,7 @@ pre .javascript .function {
 .site-title {
   display: inline-block;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
-  font-size: 1.375em;
+  font-size: 2.27em;
   font-weight: normal;
   line-height: 1.5;
   vertical-align: top;
@@ -1195,7 +1195,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #e458ee;
+  background: #a7ff63;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1379,7 +1379,7 @@ pre .javascript .function {
 }
 .site-state-item-count {
   display: block;
-  font-size: 1.25em;
+  font-size: 1.18em;
   font-weight: 600;
   text-align: center;
 }
@@ -1522,7 +1522,7 @@ pre .javascript .function {
 }
 @media (min-width: 1200px) {
   .post-body {
-    font-size: 1.125em;
+    font-size: 1.09em;
   }
 }
 .post-body span.exturl .fa {
@@ -1571,7 +1571,7 @@ pre .javascript .function {
   }
 }
 .posts-collapse .collection-title {
-  font-size: 1.125em;
+  font-size: 1.09em;
   position: relative;
 }
 .posts-collapse .collection-title::before {
@@ -1778,7 +1778,7 @@ pre .javascript .function {
   margin: 0;
 }
 .posts-expand .post-header {
-  font-size: 1.125em;
+  font-size: 1.09em;
 }
 .posts-expand .post-title {
   font-weight: normal;
