@@ -4,22 +4,24 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 4.2.1">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+<meta name="generator" content="Hexo 5.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/geniucker/source@0.0/logo/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/geniucker/source@0.0/logo/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/geniucker/source@0.0/logo/favicon-16x16-next.png">
+  <link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/geniucker/source@0.0/logo/logo.svg" color="#222">
 
 <link rel="stylesheet" href="/css/main.css">
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
   
-  <link rel="stylesheet" href="/lib/animate-css/animate.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/pace-js@1/themes/blue/pace-theme-bounce.min.css">
+  <script src="//cdn.jsdelivr.net/npm/pace-js@1/pace.min.js"></script>
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"geniucker.js.org","root":"/","scheme":"Muse","version":"8.0.0-rc.4","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"path":"search.xml","localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+    var CONFIG = {"hostname":"geniucker.js.org","root":"/","scheme":"Gemini","version":"8.0.0-rc.4","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"path":"search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
 
   <meta name="description" content="崇尚技术">
@@ -36,7 +38,7 @@
 <link rel="canonical" href="https://geniucker.js.org/page/2/">
 
 
-<script class="page-configurations">
+<script data-pjax class="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
@@ -101,6 +103,9 @@
         <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="切换导航栏">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
     </div>
   </div>
 
@@ -116,15 +121,82 @@
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
 
 
 
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-留言">
+
+    <a href="/message/" rel="section"><i class="fa fa-comment fa-fw"></i>留言</a>
+
+  </li>
+        <li class="menu-item menu-item-友人帐">
+
+    <a href="/links/" rel="section"><i class="fa fa-link fa-fw"></i>友人帐</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
 
 
 
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
 
 </div>
           
@@ -154,29 +226,45 @@
 
       <section class="site-overview-wrap sidebar-panel">
         <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Geniucker"
+      src="https://cdn.jsdelivr.net/gh/geniucker/source@0.0.23/avatar.webp">
   <p class="site-author-name" itemprop="name">Geniucker</p>
   <div class="site-description" itemprop="description">崇尚技术</div>
 </div>
 <div class="site-state-wrap animated">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
-          <a href="/archives">
+          <a href="/archives/">
+        
           <span class="site-state-item-count">11</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
+          
         <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
+          
         <span class="site-state-item-count">15</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
 </div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:zhuhaoyv@aliyun.com" title="E-Mail → mailto:zhuhaoyv@aliyun.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="http://wpa.qq.com/msgrd?v=3&uin=3037993597&site=qq&menu=yes" title="QQ → http:&#x2F;&#x2F;wpa.qq.com&#x2F;msgrd?v&#x3D;3&amp;uin&#x3D;3037993597&amp;site&#x3D;qq&amp;menu&#x3D;yes" rel="noopener" target="_blank"><i class="fab fa-qq fa-fw"></i>QQ</a>
+      </span>
+  </div>
 
 
 
@@ -193,6 +281,7 @@
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
+  <div class="reading-progress-bar"></div>
 
 <noscript>
   <div id="noscript-warning">Theme NexT works best with JavaScript enabled</div>
@@ -211,7 +300,7 @@
     <link itemprop="mainEntityOfPage" href="https://geniucker.js.org/2020/03/26/Python-%E5%85%AB%E7%9A%87%E5%90%8E%E9%97%AE%E9%A2%98/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/geniucker/source@0.0.23/avatar.webp">
       <meta itemprop="name" content="Geniucker">
       <meta itemprop="description" content="崇尚技术">
     </span>
@@ -258,6 +347,27 @@
             </span>
 
           
+            <span id="/2020/03/26/Python-%E5%85%AB%E7%9A%87%E5%90%8E%E9%97%AE%E9%A2%98/" class="post-meta-item leancloud_visitors" data-flag-title="Python 八皇后问题" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">评论数：</span>
+    
+    <a title="valine" href="/2020/03/26/Python-%E5%85%AB%E7%9A%87%E5%90%8E%E9%97%AE%E9%A2%98/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/03/26/Python-%E5%85%AB%E7%9A%87%E5%90%8E%E9%97%AE%E9%A2%98/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
 
         </div>
       </header>
@@ -270,14 +380,14 @@
 <blockquote>
 <p>&emsp;&emsp;八皇后问题，是一个古老而著名的问题，是回溯算法的典型案例。该问题是国际西洋棋棋手马克斯·贝瑟尔于1848年提出：在8×8格的国际象棋上摆放八个皇后，使其不能互相攻击，即任意两个皇后都不能处于同一行、同一列或同一斜线上，问有多少种摆法。 高斯认为有76种方案。1854年在柏林的象棋杂志上不同的作者发表了40种不同的解，后来有人用图论的方法解出92种结果。计算机发明后，有多种计算机语言可以解决此问题。<p align="right">——百度百科</p></p>
 </blockquote>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/03/26/Python-%E5%85%AB%E7%9A%87%E5%90%8E%E9%97%AE%E9%A2%98/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
+<!---more--->
+<p>这是上学期学Python的时候老师留给我们的一个思考题，一开始我和我一个同学是这么写的：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">k=<span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> a <span class="keyword">in</span> range(<span class="number">1</span>,<span class="number">9</span>):</span><br><span class="line">    a==a</span><br><span class="line">    <span class="keyword">for</span> b <span class="keyword">in</span> range(<span class="number">1</span>,<span class="number">9</span>):</span><br><span class="line">        <span class="keyword">if</span> b==a <span class="keyword">or</span> (abs(b-a)==<span class="number">1</span>):<span class="keyword">continue</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            b==b</span><br><span class="line">            <span class="keyword">for</span> c <span class="keyword">in</span> range(<span class="number">1</span>,<span class="number">9</span>):</span><br><span class="line">                <span class="keyword">if</span> c==b <span class="keyword">or</span> c==a <span class="keyword">or</span> (abs(c-b)==<span class="number">1</span>) <span class="keyword">or</span> (abs(c-a)==<span class="number">2</span>):<span class="keyword">continue</span></span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    c==c</span><br><span class="line">                    <span class="keyword">for</span> d <span class="keyword">in</span> range(<span class="number">1</span>,<span class="number">9</span>):</span><br><span class="line">                        <span class="keyword">if</span> d==c <span class="keyword">or</span> d==b <span class="keyword">or</span> d==a <span class="keyword">or</span> (abs(d-c)==<span class="number">1</span>) <span class="keyword">or</span> (abs(d-b)==<span class="number">2</span>) <span class="keyword">or</span> (abs(d-a)==<span class="number">3</span>):<span class="keyword">continue</span></span><br><span class="line">                        <span class="keyword">else</span>:</span><br><span class="line">                            d==d</span><br><span class="line">                            <span class="keyword">for</span> e <span class="keyword">in</span> range(<span class="number">1</span>,<span class="number">9</span>):</span><br><span class="line">                                <span class="keyword">if</span> e==d <span class="keyword">or</span> e==c <span class="keyword">or</span> e==b <span class="keyword">or</span> e==a <span class="keyword">or</span> (abs(e-d)==<span class="number">1</span>) <span class="keyword">or</span> (abs(e-c)==<span class="number">2</span>) <span class="keyword">or</span> (abs(e-b)==<span class="number">3</span>) <span class="keyword">or</span> (abs(e-a)==<span class="number">4</span>):<span class="keyword">continue</span></span><br><span class="line">                                <span class="keyword">else</span>:</span><br><span class="line">                                    e==e</span><br><span class="line">                                    <span class="keyword">for</span> f <span class="keyword">in</span> range(<span class="number">1</span>,<span class="number">9</span>):</span><br><span class="line">                                        <span class="keyword">if</span> f==e <span class="keyword">or</span> f==d <span class="keyword">or</span> f==c <span class="keyword">or</span> f==b <span class="keyword">or</span> f==a <span class="keyword">or</span> (abs(f-e)==<span class="number">1</span>) <span class="keyword">or</span> (abs(f-d)==<span class="number">2</span>) <span class="keyword">or</span> (abs(f-c)==<span class="number">3</span>) <span class="keyword">or</span> (abs(f-b)==<span class="number">4</span>) <span class="keyword">or</span> (abs(f-a)==<span class="number">5</span>):<span class="keyword">continue</span></span><br><span class="line">                                        <span class="keyword">else</span>:</span><br><span class="line">                                            f==f</span><br><span class="line">                                            <span class="keyword">for</span> g <span class="keyword">in</span> range(<span class="number">1</span>,<span class="number">9</span>):</span><br><span class="line">                                                <span class="keyword">if</span> g==f <span class="keyword">or</span> g==e <span class="keyword">or</span> g==d <span class="keyword">or</span> g==c <span class="keyword">or</span> g==b <span class="keyword">or</span> g==a <span class="keyword">or</span> (abs(g-f)==<span class="number">1</span>) <span class="keyword">or</span> (abs(g-e)==<span class="number">2</span>) <span class="keyword">or</span> (abs( g-d)==<span class="number">3</span>) <span class="keyword">or</span> (abs(g-c)==<span class="number">4</span>) <span class="keyword">or</span> (abs(g-b)==<span class="number">5</span>) <span class="keyword">or</span> (abs(g-a)==<span class="number">6</span>):<span class="keyword">continue</span></span><br><span class="line">                                                <span class="keyword">else</span>:</span><br><span class="line">                                                    g==g</span><br><span class="line">                                                    <span class="keyword">for</span> h <span class="keyword">in</span> range(<span class="number">1</span>,<span class="number">9</span>):</span><br><span class="line">                                                        <span class="keyword">if</span> h==g <span class="keyword">or</span> h==f <span class="keyword">or</span> h==e <span class="keyword">or</span> h==d <span class="keyword">or</span> h==c <span class="keyword">or</span> h==b <span class="keyword">or</span> h==a <span class="keyword">or</span> (abs(h-g)==<span class="number">1</span>) <span class="keyword">or</span> (abs(h-f)==<span class="number">2</span>)  <span class="keyword">or</span> (abs(h-e)==<span class="number">3</span>) <span class="keyword">or</span> (abs(h-d)==<span class="number">4</span>) <span class="keyword">or</span> (abs(h-c)==<span class="number">5</span>) <span class="keyword">or</span> (abs(h-b)== <span class="number">6</span>) <span class="keyword">or</span> (abs(h-a)==<span class="number">7</span>):<span class="keyword">continue</span></span><br><span class="line">                                                        <span class="keyword">else</span>:</span><br><span class="line">                                                            h==h</span><br><span class="line">                                                            k+=<span class="number">1</span></span><br><span class="line">                                                            print(<span class="string">&#x27;result&#x27;</span>,k,<span class="string">&#x27;:&#x27;</span>,<span class="string">&#x27;(1,&#x27;</span>,a,<span class="string">&#x27;),(2,&#x27;</span>,b,<span class="string">&#x27;),(3,&#x27;</span>,c,<span class="string">&#x27;),(4,&#x27;</span>,d,<span class="string">&#x27;),(5,&#x27;</span>,e,<span class="string">&#x27;),(6,&#x27;</span>,f,<span class="string">&#x27;),(7,&#x27;</span>,g,<span class="string">&#x27;),(8,&#x27;</span>,h,<span class="string">&#x27;)&#x27;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>这显然是我们初学者最容易想到的一种办法。由于“学业比较繁忙”，当时一直没有去思考更好的实现，直到现在才重新开始思考这个问题。从原程序看，循环嵌套了8次，由此我想到（网上看到的）让函数自己调用自己——递归。</p>
+<p>整体思路：N皇后问题每行有且仅有一个皇后，用数组（Python只能列表）表示皇后的坐标（下标为行，至为列，为了方便第一行下标仍为0），在每一行都要用循环分别判断是否与前面任意一行在同一列或同一斜排，都满足条件进入下一行，直到行数=N进行输出。下面给出代码（为了方便注释，有些可以合并的地方我分行写了）：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">num=<span class="number">0</span> <span class="comment">#用来计数</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">huangHou</span>(<span class="params">A,hang=<span class="number">0</span></span>):</span><span class="comment">#A是一个列表，hang表示第n行</span></span><br><span class="line">    <span class="keyword">global</span> num</span><br><span class="line">    <span class="keyword">if</span> len(A)==hang:<span class="comment">#递归终止条件</span></span><br><span class="line">        num += <span class="number">1</span></span><br><span class="line">        print(num,end=<span class="string">&#x27;：&#x27;</span>)</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(len(A)):<span class="comment">#坐标形式输出</span></span><br><span class="line">            print(<span class="string">&#x27;(&#x27;</span>+str(i+<span class="number">1</span>)+<span class="string">&#x27;,&#x27;</span>+str(A[i])+<span class="string">&#x27;)&#x27;</span>,end=<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">        print(<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(len(A)):<span class="comment">#遍历第hang行的每一个位置</span></span><br><span class="line">            tem = <span class="literal">True</span><span class="comment">#用于标记是否满足条件</span></span><br><span class="line">            A[hang] = i<span class="comment">#填入列表</span></span><br><span class="line">            <span class="keyword">for</span> j <span class="keyword">in</span> range(hang):<span class="comment">#判断两个条件</span></span><br><span class="line">                <span class="keyword">if</span> (A[j]==A[hang])<span class="keyword">or</span>(abs(A[j]-A[hang])==hang-j):</span><br><span class="line">                    tem = <span class="literal">False</span></span><br><span class="line">                    <span class="keyword">break</span></span><br><span class="line">            <span class="keyword">if</span> tem:huangHou(A,hang+<span class="number">1</span>)<span class="comment">#若满足条件，进入下一行</span></span><br><span class="line">huangHou([<span class="literal">None</span>]*<span class="number">8</span>)<span class="comment">#只要填入有N个元素的列表即可解决N皇后问题</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>这样不但结构清晰还简短了许多。<br>本人小白一只，若有错误欢迎在评论区留言指正（最好留下邮箱方便联系）</p>
+
       
     </div>
 
@@ -299,7 +409,7 @@
     <link itemprop="mainEntityOfPage" href="https://geniucker.js.org/2020/03/25/Python-pip-%E4%BD%BF%E7%94%A8%E5%9B%BD%E5%86%85%E6%BA%90/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/geniucker/source@0.0.23/avatar.webp">
       <meta itemprop="name" content="Geniucker">
       <meta itemprop="description" content="崇尚技术">
     </span>
@@ -350,6 +460,27 @@
             </span>
 
           
+            <span id="/2020/03/25/Python-pip-%E4%BD%BF%E7%94%A8%E5%9B%BD%E5%86%85%E6%BA%90/" class="post-meta-item leancloud_visitors" data-flag-title="Python pip 使用国内源" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">评论数：</span>
+    
+    <a title="valine" href="/2020/03/25/Python-pip-%E4%BD%BF%E7%94%A8%E5%9B%BD%E5%86%85%E6%BA%90/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/03/25/Python-pip-%E4%BD%BF%E7%94%A8%E5%9B%BD%E5%86%85%E6%BA%90/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
 
         </div>
       </header>
@@ -359,15 +490,18 @@
     
     <div class="post-body" itemprop="articleBody">
           <hr>
-<p>&emsp;&emsp;众所周知，Python使用pip安装第三方包时，会从 <a href="https://pypi.org/" target="_blank" rel="noopener">https://pypi.org/</a> 资源库中下载，然而在国内，会面临下载速度慢，甚至无法下载的尴尬。这时，配置一个国内源就很重要。下面介绍方法：
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/03/25/Python-pip-%E4%BD%BF%E7%94%A8%E5%9B%BD%E5%86%85%E6%BA%90/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
+<p>&emsp;&emsp;众所周知，Python使用pip安装第三方包时，会从 <a target="_blank" rel="noopener" href="https://pypi.org/">https://pypi.org/</a> 资源库中下载，然而在国内，会面临下载速度慢，甚至无法下载的尴尬。这时，配置一个国内源就很重要。下面介绍方法：<!---more---></p>
+<h2 id="方法一：临时使用国内镜像安装"><a href="#方法一：临时使用国内镜像安装" class="headerlink" title="方法一：临时使用国内镜像安装"></a>方法一：临时使用国内镜像安装</h2><p>安装时加上参数<code>-i &lt;国内镜像地址&gt;</code>（文末会给出几个国内镜像地址），例如：</p>
+<pre><code>pip install -i https://pypi.tuna.tsinghua.edu.cn/simple some-package</code></pre><h2 id="方式二：永久使用国内pypi镜像安装"><a href="#方式二：永久使用国内pypi镜像安装" class="headerlink" title="方式二：永久使用国内pypi镜像安装"></a>方式二：永久使用国内pypi镜像安装</h2><ol>
+<li>升级 pip 到最新的版本 (&gt;=10.0.0) 后进行配置：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install pip -U</span><br></pre></td></tr></table></figure>
+若使用默认源较慢可临时使用国内镜像<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install -i &lt;国内镜像地址&gt; pip -U</span><br></pre></td></tr></table></figure></li>
+<li>进行配置：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip config set global.index-url &lt;国内镜像地址&gt;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h2 id="推荐几个国内镜像"><a href="#推荐几个国内镜像" class="headerlink" title="推荐几个国内镜像"></a>推荐几个国内镜像</h2><pre><code>清华大学：https://pypi.tuna.tsinghua.edu.cn/simple/
+阿里云：https://mirrors.aliyun.com/pypi/simple/
+豆瓣：https://pypi.douban.com/simple/</code></pre>
       
     </div>
 
@@ -389,7 +523,7 @@
     <link itemprop="mainEntityOfPage" href="https://geniucker.js.org/2020/03/06/Hexo-GitHub-Page%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/geniucker/source@0.0.23/avatar.webp">
       <meta itemprop="name" content="Geniucker">
       <meta itemprop="description" content="崇尚技术">
     </span>
@@ -432,6 +566,27 @@
             </span>
 
           
+            <span id="/2020/03/06/Hexo-GitHub-Page%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/" class="post-meta-item leancloud_visitors" data-flag-title="Hexo+GitHub Page建立个人博客教程" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">评论数：</span>
+    
+    <a title="valine" href="/2020/03/06/Hexo-GitHub-Page%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/03/06/Hexo-GitHub-Page%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
 
         </div>
       </header>
@@ -443,18 +598,183 @@
           <hr>
 <h1 id="安装-Git"><a href="#安装-Git" class="headerlink" title="安装 Git"></a>安装 Git</h1><p>Git是目前世界上最先进的分布式版本控制系统，可以有效、高速的处理从很小到非常大的项目版本管理。也就是用来管理你的hexo博客文章，上传到GitHub的工具。  </p>
 <ul>
-<li>Windows：下载并安装<a href="https://git-scm.com/download/win" target="_blank" rel="noopener">Git</a></li>
+<li>Windows：下载并安装<a target="_blank" rel="noopener" href="https://git-scm.com/download/win">Git</a></li>
 <li>Linux (Ubuntu, Debian)：执行 <code>sudo apt-get install git-core</code></li>
 <li>Linux (Fedora, Red Hat, CentOS)：执行 <code>sudo yum install git-core</code></li>
 </ul>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/03/06/Hexo-GitHub-Page%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
+<!---more---><div class="note success"><p> <font size=5><strong>Windows 用户</strong></font><br>对于中国大陆地区用户，可以前往 <a target="_blank" rel="noopener" href="https://npm.taobao.org/mirrors/git-for-windows/">淘宝 Git for Windows 镜像</a> 下载Git安装包</p>
+</div>
+
+
+
+
+<h1 id="安装-Node-js"><a href="#安装-Node-js" class="headerlink" title="安装 Node.js"></a>安装 Node.js</h1><p>Node.js 为大多数平台提供了官方的 <a target="_blank" rel="noopener" href="https://nodejs.org/en/download/">安装程序</a>。对于中国大陆地区用户，可以前往 <a target="_blank" rel="noopener" href="https://npm.taobao.org/mirrors/node">淘宝 Node.js 镜像</a> 下载。</p>
+<div class="note primary"><p> <font size=5><strong>Windows 用户</strong></font><br>使用 Node.js 官方安装程序时，请确保勾选 <strong>Add to PATH</strong> 选项（默认已勾选）</p>
+</div>
+<div class="note danger"><p> <font size=5><strong>For Mac / Linux 用户</strong></font><br>如果在尝试安装 Hexo 的过程中出现 <code>EACCES</code> 权限错误，请遵循 <a target="_blank" rel="noopener" href="https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally">由 npmjs 发布的指导</a> 修复该问题。强烈建议 <strong>不要</strong> 使用 root、sudo 等方法覆盖权限</p>
+</div>
+
+
+<h1 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h1><p>所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo。<br>在控制台内执行<code>npm install -g hexo-cli</code><br>安装以后，可以使用以下两种方式执行 Hexo：<br>1.<code>npx hexo &lt;command&gt;</code><br>2.将 Hexo 所在的目录下的 <code>node_modules</code> 添加到环境变量之中即可直接使用 <code>hexo &lt;command&gt;</code>：</p>
+<pre><code>echo &apos;PATH=&quot;$PATH:./node_modules/.bin&quot;&apos; &gt;&gt; ~/.profile</code></pre><br>
+
+<p>安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件（&lt;folder&gt;为你要放博客的详细路径）</p>
+<pre><code>hexo init &lt;folder&gt;
+cd /d &lt;folder&gt;
+npm install</code></pre><p>新建完成后，指定文件夹下有：</p>
+<ul>
+<li><code>node_modules</code>：依赖文件夹</li>
+<li><code>public</code>：存放生成的静态文件</li>
+<li><code>scaffolds</code>：模板</li>
+<li><code>source</code>：存放文章、草稿及手动创建的页面</li>
+<li><code>themes</code>：存放主题</li>
+<li><code>_config.yml</code>：Hexo配置文件</li>
+</ul>
+<h1 id="GitHub-创建个人仓库"><a href="#GitHub-创建个人仓库" class="headerlink" title="GitHub 创建个人仓库"></a>GitHub 创建个人仓库</h1><p>登录到GitHub,如果没有GitHub帐号，使用你的邮箱注册GitHub帐号 <a target="_blank" rel="noopener" href="https://github.com/join">点击注册</a>，点击GitHub中的New repository创建新仓库，仓库名应该为：<code>用户名</code>.github.io 这个<code>用户名</code>使用你的GitHub帐号名称代替，这是固定写法，比如我的仓库名称为 geniucker.github.io</p>
+<h1 id="配置-Git"><a href="#配置-Git" class="headerlink" title="配置 Git"></a>配置 Git</h1><h2 id="设置user-name和user-email配置信息"><a href="#设置user-name和user-email配置信息" class="headerlink" title="设置user.name和user.email配置信息"></a>设置user.name和user.email配置信息</h2><p>在任意目录右键打开 Git Bash ，设置user.name和user.email配置信息：</p>
+<pre><code>git config --global user.name &lt;user_name&gt;
+git config --global user.email &lt;user_email&gt;</code></pre><p><code>&lt;user_name&gt;</code>和<code>&lt;user_email&gt;</code>分别为你的GitHub注册名和注册邮箱  </p>
+<h2 id="生成-SSH-Key-并完成连接"><a href="#生成-SSH-Key-并完成连接" class="headerlink" title="生成 SSH Key 并完成连接"></a>生成 SSH Key 并完成连接</h2><p>首先检查本地是否有ssh key </p>
+<pre><code>ls -al ~/.ssh</code></pre><p>如果终端输出的是：</p>
+<pre><code>No such file or directory</code></pre><p>说明没有创建过SSH Key，创建SSH Key：</p>
+<pre><code>ssh-keygen -t rsa -C &lt;你的邮箱&gt;</code></pre><p>替换上自己的邮箱，接着都按<kbd>Enter</kbd>确认即可<br>接着打开用户名目录下的.ssh文件夹（若是不清楚什么事用户目录可以把 <code>%USERPROFILE%\.ssh</code> 复制到计算机的地址栏里）中的id_rsa.pub中的内容全部复制（可用记事本等打开）  </p>
+<p>打开并登录GitHub，进入设置（点击角的头像，进入Settings），点击 <code>SSH and GPG keys</code> ，点击 <code>New SSH key</code> ，把刚才复制的内容粘贴到 Key 的文本框内，Title 随便填，点击 <code>Add SSH key</code> 完成添加。<br>会到 Git Bash，输入 <code>ssh git@github.com</code> <kbd>Enter</kbd>，若得到</p>
+<pre><code>The authenticity of host &apos;github.com (13.250.177.223)&apos; can&apos;t be established.
+RSA key fingerprint is   SHA256:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.
+Are you sure you want to continue connecting (yes/no)? </code></pre><p>输入yes，<kbd>Enter</kbd></p>
+<pre><code>Warning: Permanently added &apos;github.com,13.250.177.223&apos; (RSA) to the list of known hosts.
+Hi &lt;user_name&gt;! You&apos;ve successfully authenticated, but GitHub does not provide shell access.</code></pre><p>连接成功</p>
+<h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><p>可以在 <code>_config.yml</code> 中修改大部分的配置，这里只列举常用的</p>
+<h2 id="网站"><a href="#网站" class="headerlink" title="网站"></a>网站</h2><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>title</code></td>
+<td>网站标题</td>
+</tr>
+<tr>
+<td><code>subtitle</code></td>
+<td>网站副标题</td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td>网站描述（主要用于SEO，告诉搜索引擎一个关于您站点的简单描述，通常建议在其中包含您网站的关键词）</td>
+</tr>
+<tr>
+<td><code>keywords</code></td>
+<td>网站的关键词。使用半角逗号 <code>,</code> 分隔多个关键词。</td>
+</tr>
+<tr>
+<td><code>author</code></td>
+<td>您的名字（用于主题显示文章的作者）</td>
+</tr>
+<tr>
+<td><code>language</code></td>
+<td>网站使用的语言</td>
+</tr>
+<tr>
+<td><code>timezone</code></td>
+<td>网站时区。Hexo 默认使用您电脑的时区。请参考 <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">时区列表</a> 进行设置，如 <code>America/New_York</code>, <code>Japan</code>, 和 <code>UTC</code> 。一般的，对于中国大陆地区可以使用 <code>Asia/Shanghai</code>。</td>
+</tr>
+</tbody></table>
+<h2 id="网址"><a href="#网址" class="headerlink" title="网址"></a>网址</h2><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>url</code></td>
+<td>网址</td>
+<td></td>
+</tr>
+<tr>
+<td><code>root</code></td>
+<td>网站根目录</td>
+<td></td>
+</tr>
+<tr>
+<td><code>permalink</code></td>
+<td>文章的 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/permalinks">永久链接</a> 格式</td>
+<td><code>:year/:month/:day/:title/</code></td>
+</tr>
+<tr>
+<td><code>pretty_urls.trailing_index</code></td>
+<td>是否在永久链接中保留尾部的 <code>index.html</code>，设置为 <code>false</code> 时去除</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><code>pretty_urls.trailing_html</code></td>
+<td>是否在永久链接中保留尾部的 <code>.html</code>, 设置为 <code>false</code> 时去除 (<em>对尾部的 <code>index.html</code>无效</em>)</td>
+<td><code>true</code></td>
+</tr>
+</tbody></table>
+<div class="note info"><p> <font size=5><strong>网站存放在子目录</strong></font><br>如果您的网站存放在子目录中，例如 <code>http://yoursite.com/blog</code>，则请将您的 <code>url</code> 设为 <code>http://yoursite.com/blog</code> 并把 <code>root</code> 设为 <code>/blog/</code></p>
+</div>
+
+<pre><code># 比如，一个页面的永久链接是 http://example.com/foo/bar/index.html
+pretty_urls:
+  trailing_index: false
+# 此时页面的永久链接会变为 http://example.com/foo/bar/</code></pre><h2 id="分页"><a href="#分页" class="headerlink" title="分页"></a>分页</h2><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>per_page</code></td>
+<td>每页显示的文章量 (0 = 关闭分页功能)</td>
+<td><code>10</code></td>
+</tr>
+</tbody></table>
+<h2 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h2><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>theme</code></td>
+<td>当前主题名称。值为<code>false</code>时禁用主题</td>
+</tr>
+<tr>
+<td><code>deploy</code></td>
+<td>部署部分的设置</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>由于使用 GitHub Page，<code>deploy</code>部分改为</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line"> type: git</span><br><span class="line"> repository: git@github.com:&lt;username&gt;&#x2F;&lt;username&gt;.github.io.git</span><br><span class="line"> branch: master</span><br></pre></td></tr></table></figure>
+<p><username>替换为GitHub用户名</p>
+</blockquote>
+<h1 id="安装-git-deploy-插件"><a href="#安装-git-deploy-插件" class="headerlink" title="安装 git-deploy 插件"></a>安装 git-deploy 插件</h1><p>因为要通过 Git 将Hexo部署到GitHub，所以要用到 git-deploy</p>
+<pre><code>cd &lt;folder&gt;
+npm install hexo-deployer-git --save</code></pre><p>&lt;folder&gt;为Hexo所在文件夹的详细目录</p>
+<h1 id="调试-Hexo"><a href="#调试-Hexo" class="headerlink" title="调试 Hexo"></a>调试 Hexo</h1><div class="note danger"><p>执行任何 Hexo 的命令都要cd到博客所在文件夹，为了避免麻烦，我的做法是在博客根目录下建立一个bat文件，内容改为cmd，要执行命令只要打开它而不用cd <folder></p>
+</div>
+<p><code>hexo server</code> 或 <code>hexo s</code>  在本地运行网站，当得到</p>
+<pre><code>INFO  Start processing
+INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.</code></pre><p>可在浏览器打开localhost:4000访问你的博客，用完只要按<kbd>Ctrl</kbd>+<kbd>C</kbd>或直接关闭控制台窗口<br><br></p>
+<p><code>hexo clean</code> 清除缓存文件 (db.json) 和已生成的静态文件 (public)。在某些情况（尤其是更换主题后），如果发现您对站点的更改无论如何也不生效，您可能需要运行该命令。<br><br></p>
+<p><code>hexo generate</code> 或 <code>hexo g</code> 生成静态文件，后面可跟<code>-d</code>、<code>-f</code> 等参数<br>如： </p>
+<blockquote>
+<p><code>hexo g -f</code>强制重新生成静态文件，效果相当于<code>hexo clean</code> &amp;&amp; <code>hexo g</code><br><code>hexo g -d</code>生成静态文件后立即部署网站，效果相当于<code>hexo clean</code> &amp;&amp; <code>hexo g</code></p>
+</blockquote>
+<br>
+
+<p><code>hexo deploy</code> 或 <code>hexo d</code> 部署网站，可跟参数 <code>-g</code>部署之前先生成静态文件</p>
+<h1 id="绑定个人域名"><a href="#绑定个人域名" class="headerlink" title="绑定个人域名"></a>绑定个人域名</h1><p>1.为域名设置指向 &lt;yourname&gt;.github.io 的记录<br><img data-src="https://cdn.jsdelivr.net/gh/geniucker/source@latest/20200306-1-1.jpg" alt="picture"> <img data-src="https://cdn.jsdelivr.net/gh/geniucker/source@latest/20200306-1-2.jpg" alt="picture"><br>2.在网站根目录的source文件夹中建立文件<code>CNAME</code>（全大写，无拓展名），文件的内容为你要绑定域名（不是&lt;yourname&gt;.github.io）<br>3.打开项目的设置页 github.com/&lt;yourname&gt;/&lt;\yourname&gt;.github.io/settings（&lt;yourname&gt;换乘GitHub用户名）定位到下图所示处： <img data-src="https://cdn.jsdelivr.net/gh/geniucker/source@latest/20200306-1-3.jpg" alt="picture">在Custom domain的编辑框内填上要绑定的域名<br>建议在 “Enforce HTTPS” 前的复选框上打勾，若无法打勾可能正在申请证书，过一段时间再试<br>4.正常部署网站，即可通过自己域名访问博客<br><strong>P.S.域名解析生效可能需要一定时间，不一定马上就能通过自己的域名访问</strong></p>
+<h1 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h1><p>其它详细信息详见 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/index.html">官方文档</a></p>
+
       
     </div>
 
@@ -476,7 +796,7 @@
     <link itemprop="mainEntityOfPage" href="https://geniucker.js.org/2020/02/27/%E6%9B%B4%E6%96%B0%EF%BC%8C%E5%97%AF/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/geniucker/source@0.0.23/avatar.webp">
       <meta itemprop="name" content="Geniucker">
       <meta itemprop="description" content="崇尚技术">
     </span>
@@ -519,6 +839,27 @@
             </span>
 
           
+            <span id="/2020/02/27/%E6%9B%B4%E6%96%B0%EF%BC%8C%E5%97%AF/" class="post-meta-item leancloud_visitors" data-flag-title="更新，嗯~" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">评论数：</span>
+    
+    <a title="valine" href="/2020/02/27/%E6%9B%B4%E6%96%B0%EF%BC%8C%E5%97%AF/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/02/27/%E6%9B%B4%E6%96%B0%EF%BC%8C%E5%97%AF/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
 
         </div>
       </header>
@@ -559,7 +900,7 @@
     <link itemprop="mainEntityOfPage" href="https://geniucker.js.org/2020/02/26/%E7%BB%88%E4%BA%8E%E6%90%AD%E5%A5%BD%E5%8D%9A%E5%AE%A2%E4%BA%86/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/geniucker/source@0.0.23/avatar.webp">
       <meta itemprop="name" content="Geniucker">
       <meta itemprop="description" content="崇尚技术">
     </span>
@@ -602,6 +943,27 @@
             </span>
 
           
+            <span id="/2020/02/26/%E7%BB%88%E4%BA%8E%E6%90%AD%E5%A5%BD%E5%8D%9A%E5%AE%A2%E4%BA%86/" class="post-meta-item leancloud_visitors" data-flag-title="终于搭好博客了" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">评论数：</span>
+    
+    <a title="valine" href="/2020/02/26/%E7%BB%88%E4%BA%8E%E6%90%AD%E5%A5%BD%E5%8D%9A%E5%AE%A2%E4%BA%86/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/02/26/%E7%BB%88%E4%BA%8E%E6%90%AD%E5%A5%BD%E5%8D%9A%E5%AE%A2%E4%BA%86/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
 
         </div>
       </header>
@@ -685,8 +1047,8 @@
   </span>
   <span class="author" itemprop="copyrightHolder">Geniucker</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
-  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div><script color="190,190,190" opacity="0.8" zIndex="-1" count="99" src="https://cdn.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.js"></script>
 
         
 
@@ -702,24 +1064,58 @@
   </div>
 
   
-  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/next-theme/pjax@0/pjax.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
 
 <script src="/js/utils.js"></script>
 
 <script src="/js/motion.js"></script>
 
 
-<script src="/js/schemes/muse.js"></script>
-
-
 <script src="/js/next-boot.js"></script>
 
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '.page-configurations',
+    '.main-inner',
+    '.post-toc-wrap',
+    '.languages',
+    '.pjax'
+  ],
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+document.addEventListener('pjax:success', () => {
+  pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  const hasTOC = document.querySelector('.post-toc');
+  document.querySelector('.sidebar-inner').classList.toggle('sidebar-nav-active', hasTOC);
+  document.querySelector(hasTOC ? '.sidebar-nav-toc' : '.sidebar-nav-overview').click();
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
 
   
 
 
 
 
+  
+<script src="/js/local-search.js"></script>
 
 
 
@@ -731,9 +1127,36 @@
 
 
 
+
+
+    <div class="pjax">
   
 
   
+  <script src="//cdn.jsdelivr.net/npm/quicklink@2/dist/quicklink.umd.js"></script>
+  <script>
+      window.addEventListener('load', () => {
+      quicklink.listen({
+        timeout : 3000,
+        priority: true,
+        ignores : [uri => uri.includes('#'),uri => uri === 'https://geniucker.js.org/page/2/',]
+      });
+      });
+  </script>
 
+
+<script>
+NexT.utils.loadComments('#valine-comments', () => {
+  NexT.utils.getScript('https://cdn.jsdelivr.net/gh/geniucker/source@0.0.22/Valine.min.js', () => {
+    new Valine(Object.assign({
+      el  : '#valine-comments',
+      path: location.pathname,
+    }, {"enable":true,"appId":"ysYlaP1472LLNR6DROfSuYT3-MdYXbMMI","appKey":"G8M1LhWcIflNSEUEBzB1PM6s","placeholder":"欢迎留言！在这里说出你的想法（支持Markdown）！若要及时得到回复通知请填上常用的邮箱。","avatar":"mp","meta":["nick","mail","link"],"pageSize":6,"language":"zh-cn","visitor":true,"comment_count":true,"recordIP":false,"serverURLs":"https://us.leancloud.cn","enableQQ":false,"requiredFields":["nick","mail"],"notify":false,"verify":true,"emojiCDN":"https://cdn.jsdelivr.net/gh/geniucker/source@0.0.22/emoji/","emojiMaps":{"qq-1":"qq/qq-1.webp","qq-2":"qq/qq-2.webp","qq-3":"qq/qq-3.webp","qq-4":"qq/qq-4.webp","qq-5":"qq/qq-5.webp","qq-6":"qq/qq-6.webp","qq-7":"qq/qq-7.webp","qq-8":"qq/qq-8.webp","qq-9":"qq/qq-9.webp","qq-10":"qq/qq-10.webp","qq-11":"qq/qq-11.webp","qq-12":"qq/qq-12.webp","qq-13":"qq/qq-13.webp","qq-14":"qq/qq-14.webp","qq-15":"qq/qq-15.webp","qq-16":"qq/qq-16.webp","qq-17":"qq/qq-17.webp","qq-18":"qq/qq-18.webp","qq-19":"qq/qq-19.webp","qq-20":"qq/qq-20.webp","qq-21":"qq/qq-21.webp","qq-22":"qq/qq-22.webp","qq-23":"qq/qq-23.webp","qq-24":"qq/qq-24.webp","qq-25":"qq/qq-25.webp","qq-26":"qq/qq-26.webp","qq-27":"qq/qq-27.webp","qq-28":"qq/qq-28.webp","qq-29":"qq/qq-29.webp","qq-30":"qq/qq-30.webp","qq-31":"qq/qq-31.webp","qq-32":"qq/qq-32.webp","qq-33":"qq/qq-33.webp","qq-34":"qq/qq-34.webp","qq-35":"qq/qq-35.webp","qq-36":"qq/qq-36.webp","qq-37":"qq/qq-37.webp","qq-38":"qq/qq-38.webp","qq-39":"qq/qq-39.webp","qq-40":"qq/qq-40.webp","qq-41":"qq/qq-41.webp","qq-42":"qq/qq-42.webp","qq-43":"qq/qq-43.webp","qq-44":"qq/qq-44.webp","qq-45":"qq/qq-45.webp","qq-46":"qq/qq-46.webp","qq-47":"qq/qq-47.webp","qq-48":"qq/qq-48.webp","qq-49":"qq/qq-49.webp","qq-50":"qq/qq-50.webp","qq-51":"qq/qq-51.webp","qq-52":"qq/qq-52.webp","qq-53":"qq/qq-53.webp","qq-54":"qq/qq-54.webp","qq-55":"qq/qq-55.webp","qq-56":"qq/qq-56.webp","qq-57":"qq/qq-57.webp","qq-58":"qq/qq-58.webp","qq-59":"qq/qq-59.webp","qq-60":"qq/qq-60.webp","qq-61":"qq/qq-61.webp","qq-62":"qq/qq-62.webp","qq-63":"qq/qq-63.webp","qq-64":"qq/qq-64.webp","qq-65":"qq/qq-65.webp","qq-66":"qq/qq-66.webp","qq-67":"qq/qq-67.webp","qq-68":"qq/qq-68.webp","qq-69":"qq/qq-69.webp","qq-70":"qq/qq-70.webp","qq-71":"qq/qq-71.webp","qq-72":"qq/qq-72.webp","qq-73":"qq/qq-73.webp","qq-74":"qq/qq-74.webp","qq-75":"qq/qq-75.webp","qq-76":"qq/qq-76.webp","qq-77":"qq/qq-77.webp","qq-78":"qq/qq-78.webp","qq-79":"qq/qq-79.webp","qq-80":"qq/qq-80.webp","qq-81":"qq/qq-81.webp","qq-82":"qq/qq-82.webp","qq-83":"qq/qq-83.webp","qq-84":"qq/qq-84.webp","qq-85":"qq/qq-85.webp","qq-86":"qq/qq-86.webp","qq-87":"qq/qq-87.webp","qq-88":"qq/qq-88.webp","qq-89":"qq/qq-89.webp","qq-90":"qq/qq-90.webp","qq-91":"qq/qq-91.webp","qq-92":"qq/qq-92.webp","qq-93":"qq/qq-93.webp","qq-94":"qq/qq-94.webp","qq-95":"qq/qq-95.webp","qq-96":"qq/qq-96.webp","qq-97":"qq/qq-97.webp","qq-98":"qq/qq-98.webp","qq-99":"qq/qq-99.webp","qq-100":"qq/qq-100.webp","qq-101":"qq/qq-101.webp","tieba-1":"tieba/tieba-1.webp","tieba-2":"tieba/tieba-2.webp","tieba-3":"tieba/tieba-3.webp","tieba-4":"tieba/tieba-4.webp","tieba-5":"tieba/tieba-5.webp","tieba-6":"tieba/tieba-6.webp","tieba-7":"tieba/tieba-7.webp","tieba-8":"tieba/tieba-8.webp","tieba-9":"tieba/tieba-9.webp","tieba-10":"tieba/tieba-10.webp","tieba-11":"tieba/tieba-11.webp","tieba-12":"tieba/tieba-12.webp","tieba-13":"tieba/tieba-13.webp","tieba-14":"tieba/tieba-14.webp","tieba-15":"tieba/tieba-15.webp","tieba-16":"tieba/tieba-16.webp","tieba-17":"tieba/tieba-17.webp","tieba-18":"tieba/tieba-18.webp","tieba-19":"tieba/tieba-19.webp","tieba-20":"tieba/tieba-20.webp","tieba-21":"tieba/tieba-21.webp","tieba-22":"tieba/tieba-22.webp","tieba-23":"tieba/tieba-23.webp","tieba-24":"tieba/tieba-24.webp","tieba-25":"tieba/tieba-25.webp","tieba-26":"tieba/tieba-26.webp","tieba-27":"tieba/tieba-27.webp","tieba-28":"tieba/tieba-28.webp","tieba-29":"tieba/tieba-29.webp","tieba-30":"tieba/tieba-30.webp","tieba-31":"tieba/tieba-31.webp","tieba-32":"tieba/tieba-32.webp","tieba-33":"tieba/tieba-33.webp","tieba-34":"tieba/tieba-34.webp","tieba-35":"tieba/tieba-35.webp","tieba-36":"tieba/tieba-36.webp","tieba-37":"tieba/tieba-37.webp","tieba-38":"tieba/tieba-38.webp","tieba-39":"tieba/tieba-39.webp","tieba-40":"tieba/tieba-40.webp","tieba-41":"tieba/tieba-41.webp","tieba-42":"tieba/tieba-42.webp","tieba-43":"tieba/tieba-43.webp","tieba-44":"tieba/tieba-44.webp","tieba-45":"tieba/tieba-45.webp","tieba-46":"tieba/tieba-46.webp","tieba-47":"tieba/tieba-47.webp","tieba-48":"tieba/tieba-48.webp","tieba-49":"tieba/tieba-49.webp","tieba-50":"tieba/tieba-50.webp","tieba-51":"tieba/tieba-51.webp","tieba-52":"tieba/tieba-52.webp","tieba-53":"tieba/tieba-53.webp","tieba-54":"tieba/tieba-54.webp","smile":"2018new_weixioa02_org.webp","lovely":"2018new_keai_org.webp","happy":"2018new_taikaixin_org.webp","clap":"2018new_guzhang_thumb.webp","whee":"2018new_xixi_thumb.webp","haha":"2018new_haha_thumb.webp","laugh and cry":"2018new_xiaoku_thumb.webp","wink":"2018new_jiyan_org.webp","greddy":"2018new_chanzui_org.webp","awkward":"2018new_heixian_thumb.webp","sweat":"2018new_han_org.webp","pick nose":"2018new_wabi_thumb.webp","hum":"2018new_heng_thumb.webp","angry":"2018new_nu_thumb.webp","grievance":"2018new_weiqu_thumb.webp","poor":"2018new_kelian_org.webp","disappoint":"2018new_shiwang_thumb.webp","sad":"2018new_beishang_org.webp","tear":"2018new_leimu_org.webp","no way":"2018new_kuxiao_org.webp","shy":"2018new_haixiu_org.webp","dirt":"2018new_wu_thumb.webp","love you":"2018new_aini_org.webp","kiss":"2018new_qinqin_thumb.webp","amorousness":"2018new_huaxin_org.webp","longing":"2018new_chongjing_org.webp","desire":"2018new_tianping_thumb.webp","bad laugh":"2018new_huaixiao_org.webp","blackness":"2018new_yinxian_org.webp","laugh without word":"2018new_xiaoerbuyu_org.webp","titter":"2018new_touxiao_org.webp","cool":"2018new_ku_org.webp","not easy":"2018new_bingbujiandan_thumb.webp","think":"2018new_sikao_org.webp","question":"2018new_ningwen_org.webp","no idea":"2018new_wenhao_thumb.webp","dizzy":"2018new_yun_thumb.webp","bomb":"2018new_shuai_thumb.webp","bone":"2018new_kulou_thumb.webp","be quiet":"2018new_xu_org.webp","shut up":"2018new_bizui_org.webp","stupid":"2018new_shayan_org.webp","surprise":"2018new_chijing_org.webp","vomit":"2018new_tu_org.webp","cold":"2018new_kouzhao_thumb.webp","sick":"2018new_shengbing_thumb.webp","bye":"2018new_baibai_thumb.webp","look down on":"2018new_bishi_org.webp","white eye":"2018new_landelini_org.webp","left hum":"2018new_zuohengheng_thumb.webp","right hum":"2018new_youhengheng_thumb.webp","crazy":"2018new_zhuakuang_org.webp","scold":"2018new_zhouma_thumb.webp","hit on face":"2018new_dalian_org.webp","wow":"2018new_ding_org.webp","fan":"2018new_hufen02_org.webp","money":"2018new_qian_thumb.webp","yawn":"2018new_dahaqian_org.webp","sleepy":"2018new_kun_thumb.webp","sleep":"2018new_shuijiao_thumb.webp","watermelon":"2018new_chigua_thumb.webp","doge":"2018new_doge02_org.webp","dog":"2018new_erha_org.webp","cat":"2018new_miaomiao_thumb.webp","thumb":"2018new_zan_org.webp","good":"2018new_good_org.webp","ok":"2018new_ok_org.webp","yeah":"2018new_ye_thumb.webp","shack hand":"2018new_woshou_thumb.webp","bow":"2018new_zuoyi_org.webp","come":"2018new_guolai_thumb.webp","punch":"2018new_quantou_thumb.webp","高兴":"高兴.webp","鼓掌":"鼓掌.webp","黑线":"黑线.webp","不出所料":"不出所料.webp","狂汗":"狂汗.webp","亲亲":"亲亲.webp","献花":"献花.webp","击掌":"击掌.webp","赞一个":"赞一个.webp","得意":"得意.webp","脸红":"脸红.webp","惊喜":"惊喜.webp","想一想":"想一想.webp","蜡烛":"蜡烛.webp","装大款":"装大款.webp","观察":"观察.webp","口水":"口水.webp","吐":"吐.webp","吐舌":"吐舌.webp","吐血倒地":"吐血倒地.webp","不说话":"不说话.webp","不高兴":"不高兴.webp","中刀":"中刀.webp","中枪":"中枪.webp","呲牙":"呲牙.webp","咽气":"咽气.webp","哭泣":"哭泣.webp","喜极而泣":"喜极而泣.webp","喷水":"喷水.webp","中指":"中指.webp","喷血":"喷血.webp","坐等":"坐等.webp","害羞":"害羞.webp","小眼睛":"小眼睛.webp","愤怒":"愤怒.webp","尴尬":"尴尬.webp","扇耳光":"扇耳光.webp","投降":"投降.webp","抠鼻":"抠鼻.webp","抽烟":"抽烟.webp","无奈":"无奈.webp","无所谓":"无所谓.webp","无语":"无语.webp","暗地观察":"暗地观察.webp","欢呼":"欢呼.webp","期待":"期待.webp","汗":"汗.webp","深思":"深思.webp","便便":"便便.webp","献黄瓜":"献黄瓜.webp","内伤":"内伤.webp","皱眉":"皱眉.webp","看不见":"看不见.webp","看热闹":"看热闹.webp","瞅你":"瞅你.webp","肿包":"肿包.webp","锁眉":"锁眉.webp","邪恶":"邪恶.webp","长草":"长草.webp","阴暗":"阴暗.webp"}}
+    ));
+  }, window.Valine);
+});
+</script>
+
+    </div>
 <script src="https://cdn.jsdelivr.net/npm/live2d-widget@latest/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-haruto@latest/assets/haruto.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body>
 </html>

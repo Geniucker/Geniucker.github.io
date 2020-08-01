@@ -4,22 +4,24 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 4.2.1">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+<meta name="generator" content="Hexo 5.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/geniucker/source@0.0/logo/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/geniucker/source@0.0/logo/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/geniucker/source@0.0/logo/favicon-16x16-next.png">
+  <link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/geniucker/source@0.0/logo/logo.svg" color="#222">
 
 <link rel="stylesheet" href="/css/main.css">
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
   
-  <link rel="stylesheet" href="/lib/animate-css/animate.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/pace-js@1/themes/blue/pace-theme-bounce.min.css">
+  <script src="//cdn.jsdelivr.net/npm/pace-js@1/pace.min.js"></script>
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"geniucker.js.org","root":"/","scheme":"Muse","version":"8.0.0-rc.4","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"path":"search.xml","localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+    var CONFIG = {"hostname":"geniucker.js.org","root":"/","scheme":"Gemini","version":"8.0.0-rc.4","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"path":"search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
 
   <meta name="description" content="崇尚技术">
@@ -36,7 +38,7 @@
 <link rel="canonical" href="https://geniucker.js.org/">
 
 
-<script class="page-configurations">
+<script data-pjax class="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
@@ -101,6 +103,9 @@
         <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="切换导航栏">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
     </div>
   </div>
 
@@ -116,15 +121,82 @@
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
 
 
 
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-留言">
+
+    <a href="/message/" rel="section"><i class="fa fa-comment fa-fw"></i>留言</a>
+
+  </li>
+        <li class="menu-item menu-item-友人帐">
+
+    <a href="/links/" rel="section"><i class="fa fa-link fa-fw"></i>友人帐</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
 
 
 
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
 
 </div>
           
@@ -154,29 +226,45 @@
 
       <section class="site-overview-wrap sidebar-panel">
         <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Geniucker"
+      src="https://cdn.jsdelivr.net/gh/geniucker/source@0.0.23/avatar.webp">
   <p class="site-author-name" itemprop="name">Geniucker</p>
   <div class="site-description" itemprop="description">崇尚技术</div>
 </div>
 <div class="site-state-wrap animated">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
-          <a href="/archives">
+          <a href="/archives/">
+        
           <span class="site-state-item-count">11</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
+          
         <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
+          
         <span class="site-state-item-count">15</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
 </div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:zhuhaoyv@aliyun.com" title="E-Mail → mailto:zhuhaoyv@aliyun.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="http://wpa.qq.com/msgrd?v=3&uin=3037993597&site=qq&menu=yes" title="QQ → http:&#x2F;&#x2F;wpa.qq.com&#x2F;msgrd?v&#x3D;3&amp;uin&#x3D;3037993597&amp;site&#x3D;qq&amp;menu&#x3D;yes" rel="noopener" target="_blank"><i class="fab fa-qq fa-fw"></i>QQ</a>
+      </span>
+  </div>
 
 
 
@@ -193,6 +281,7 @@
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
+  <div class="reading-progress-bar"></div>
 
 <noscript>
   <div id="noscript-warning">Theme NexT works best with JavaScript enabled</div>
@@ -211,7 +300,7 @@
     <link itemprop="mainEntityOfPage" href="https://geniucker.js.org/2020/07/23/%E7%94%A8Chrome%E5%B0%8F%E6%81%90%E9%BE%99dino%E5%88%B6%E4%BD%9Chexo%E7%9A%84404%E9%A1%B5%E9%9D%A2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/geniucker/source@0.0.23/avatar.webp">
       <meta itemprop="name" content="Geniucker">
       <meta itemprop="description" content="崇尚技术">
     </span>
@@ -248,6 +337,27 @@
             </span>
 
           
+            <span id="/2020/07/23/%E7%94%A8Chrome%E5%B0%8F%E6%81%90%E9%BE%99dino%E5%88%B6%E4%BD%9Chexo%E7%9A%84404%E9%A1%B5%E9%9D%A2/" class="post-meta-item leancloud_visitors" data-flag-title="用Chrome小恐龙dino制作Hexo的404页面" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">评论数：</span>
+    
+    <a title="valine" href="/2020/07/23/%E7%94%A8Chrome%E5%B0%8F%E6%81%90%E9%BE%99dino%E5%88%B6%E4%BD%9Chexo%E7%9A%84404%E9%A1%B5%E9%9D%A2/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/07/23/%E7%94%A8Chrome%E5%B0%8F%E6%81%90%E9%BE%99dino%E5%88%B6%E4%BD%9Chexo%E7%9A%84404%E9%A1%B5%E9%9D%A2/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
 
         </div>
       </header>
@@ -259,14 +369,20 @@
           <blockquote>
 <p>&emsp;&emsp;404页面是客户端在浏览网页时，服务器无法正常提供信息，或是服务器无法回应，且不知道原因所返回的页面。据说在第三次科技革命之前，互联网的形态就是一个大型的中央数据库，这个数据库就设置在404房间里面。那时候所有的请求都是由人工手动完成的，如果在数据库中没有找到请求者所需要的文件，或者由于请求者写错了文件编号，用户就会得到一个返回信息：room 404 : file not found。404错误信息通常是在目标页面被更改或移除，或客户端输入页面地址错误后显示的页面，人们也就习惯了用404作为服务器未找到文件的错误代码了。当然实际考证传说中的room 404是不存在的，在http请求3位的返回码中，4开头的代表客户错误，5开头代表服务器端错误。<p align="right">——百度百科</p></p>
 </blockquote>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/07/23/%E7%94%A8Chrome%E5%B0%8F%E6%81%90%E9%BE%99dino%E5%88%B6%E4%BD%9Chexo%E7%9A%84404%E9%A1%B5%E9%9D%A2/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
+<!---more--->
+<p>对于使用GitHub Pages的用户，Github提供了 <a target="_blank" rel="noopener" href="https://wolf2003rain.github.io/404.html">默认的404页面</a> 。当然，我们也可以自定义一个404页面。下面就教大家如何使用Chrome小恐龙制作404页面。</p>
+<h1 id="预览"><a href="#预览" class="headerlink" title="预览"></a>预览</h1><p><a href="/404.html">我的404页面</a></p>
+<h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1><h2 id="建立-dino-html-文件"><a href="#建立-dino-html-文件" class="headerlink" title="建立 dino.html 文件"></a>建立 <code>dino.html</code> 文件</h2><p>在博客目录的<code>source\_data\</code>下建立 <code>dino.html</code> 文件，内容为：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span> &gt;</span>404<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/geniucker/source@0.0.28/dino/dino.css&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/geniucker/source@0.0.29/dino/Open+Sans.css&quot;</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span>&gt;</span> </span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/geniucker/source@0.0.28/dino/dino.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">id</span>=<span class="string">&quot;t&quot;</span> <span class="attr">class</span>=<span class="string">&quot;offline&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;messageBox&quot;</span> <span class="attr">class</span>=<span class="string">&quot;sendmessage&quot;</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;niokbutton&quot;</span> <span class="attr">onclick</span>=<span class="string">&quot;okbuttonsend()&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;main-frame-error&quot;</span> <span class="attr">class</span>=<span class="string">&quot;interstitial-wrapper&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;main-content&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;icon icon-offline&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;offline-resources&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">img</span> <span class="attr">id</span>=<span class="string">&quot;offline-resources-1x&quot;</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/geniucker/source@0.0.28/dino/assets/default_100_percent/100-offline-sprite.png&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">img</span> <span class="attr">id</span>=<span class="string">&quot;offline-resources-2x&quot;</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/geniucker/source@0.0.28/dino/assets/default_200_percent/200-offline-sprite.png&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">template</span> <span class="attr">id</span>=<span class="string">&quot;audio-resources&quot;</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">audio</span> <span class="attr">id</span>=<span class="string">&quot;offline-sound-press&quot;</span> <span class="attr">src</span>=<span class="string">&quot;data:audio/mpeg;base64,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&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">audio</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">audio</span> <span class="attr">id</span>=<span class="string">&quot;offline-sound-hit&quot;</span> <span class="attr">src</span>=<span class="string">&quot;data:audio/mpeg;base64,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&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">audio</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">audio</span> <span class="attr">id</span>=<span class="string">&quot;offline-sound-reached&quot;</span> <span class="attr">src</span>=<span class="string">&quot;data:audio/mpeg;base64,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&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">audio</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">    <span class="built_in">document</span>.onkeydown = <span class="function"><span class="keyword">function</span>(<span class="params">evt</span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">    evt = evt || <span class="built_in">window</span>.event;</span></span><br><span class="line">    if (evt.keyCode == 32) &#123;</span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> box = <span class="built_in">document</span>.getElementById(<span class="string">&quot;messageBox&quot;</span>);</span></span><br><span class="line"><span class="javascript">        box.style.visibility=<span class="string">&quot;hidden&quot;</span>;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="建立-404-html-文件"><a href="#建立-404-html-文件" class="headerlink" title="建立 404.html 文件"></a>建立 <code>404.html</code> 文件</h2><p>在博客目录的<code>source\_data\</code>下建立 <code>404.html</code> 文件，内容为：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">comments: false</span><br><span class="line">toc:</span><br><span class="line">  enable: false</span><br><span class="line">---</span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;Content-Language&quot;</span> <span class="attr">content</span>=<span class="string">&quot;zh-CN&quot;</span>&gt;</span> </span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">HTTP-EQUIV</span>=<span class="string">&quot;Content-Type&quot;</span> <span class="attr">CONTENT</span>=<span class="string">&quot;text/html; charset=gb2312&quot;</span>&gt;</span> </span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>404<span class="tag">&lt;/<span class="name">title</span>&gt;</span> </span><br><span class="line">  <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;alternate&quot;</span> <span class="attr">href</span>=<span class="string">&quot;/atom.xml&quot;</span> <span class="attr">title</span>=<span class="string">&quot;&lt;你的博客名&gt;&quot;</span> <span class="attr">type</span>=<span class="string">&quot;application/atom+xml&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h4</span> <span class="attr">style</span>=<span class="string">&quot;background: url(https://cdn.jsdelivr.net/gh/geniucker/source@0.0.31/404.png) center top no-repeat;padding-top: 80px;background-size: contain;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h4</span>&gt;</span><span class="tag">&lt;<span class="name">center</span>&gt;</span>来玩Chrome小恐龙吧，点一下小恐龙你就可以正常开始啦~<span class="tag">&lt;<span class="name">br</span>&gt;</span>P.S.空格或↑跳跃，↓下蹲<span class="tag">&lt;/<span class="name">center</span>&gt;</span><span class="tag">&lt;/<span class="name">h5</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">src</span>=<span class="string">&quot;/dino.html&quot;</span> <span class="attr">seamless</span>=<span class="string">&quot;seamless&quot;</span> <span class="attr">scrolling</span>=<span class="string">&quot;no&quot;</span> <span class="attr">frameborder</span>=<span class="string">&quot;0&quot;</span> <span class="attr">style</span>=<span class="string">&quot;width: -webkit-fill-available;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<style>
+img{margin-left: inherit;}
+</style>
+<p>把其中的<code>&lt;你的博客名&gt;</code>（第10行）改为你的博客名称</p>
+<h2 id="修改站点配置文件-config-yml"><a href="#修改站点配置文件-config-yml" class="headerlink" title="修改站点配置文件_config.yml"></a>修改站点配置文件<code>_config.yml</code></h2><p>找到站点配置文件<code>_config.yml</code>中的配置项<code>skip_render</code>，在原有的基础上加上<code>dino.html</code>，用<strong>英文</strong>逗号分隔，若值不止一个请使用中括号列表的形式，如图：<img data-src="https://cdn.jsdelivr.net/gh/geniucker/source@0.0.32/image/20200723-1/1.png" alt=""></p>
+<h2 id="如果网页托管在Vercel，创建vercel-json"><a href="#如果网页托管在Vercel，创建vercel-json" class="headerlink" title="如果网页托管在Vercel，创建vercel.json"></a>如果网页托管在Vercel，创建<code>vercel.json</code></h2><p>如果网页托管在Vercel，创建<code>vercel.json</code>，内容如下：</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;version&quot;</span>: <span class="number">2</span>,</span><br><span class="line">  <span class="attr">&quot;routes&quot;</span>: [</span><br><span class="line">    &#123; <span class="attr">&quot;handle&quot;</span>: <span class="string">&quot;filesystem&quot;</span> &#125;,</span><br><span class="line">    &#123; <span class="attr">&quot;src&quot;</span>: <span class="string">&quot;/(.*)&quot;</span>, <span class="attr">&quot;status&quot;</span>: <span class="number">404</span>, <span class="attr">&quot;dest&quot;</span>: <span class="string">&quot;/404.html&quot;</span> &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -288,7 +404,7 @@
     <link itemprop="mainEntityOfPage" href="https://geniucker.js.org/2020/05/10/PS%E5%88%B6%E4%BD%9C%E5%A5%BD%E7%9C%8B%E7%9A%84%E9%9D%92%E8%89%B2%E8%8A%B1%E7%BA%B9%E5%AD%97/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/geniucker/source@0.0.23/avatar.webp">
       <meta itemprop="name" content="Geniucker">
       <meta itemprop="description" content="崇尚技术">
     </span>
@@ -335,6 +451,27 @@
             </span>
 
           
+            <span id="/2020/05/10/PS%E5%88%B6%E4%BD%9C%E5%A5%BD%E7%9C%8B%E7%9A%84%E9%9D%92%E8%89%B2%E8%8A%B1%E7%BA%B9%E5%AD%97/" class="post-meta-item leancloud_visitors" data-flag-title="PS制作好看的青色花纹字" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">评论数：</span>
+    
+    <a title="valine" href="/2020/05/10/PS%E5%88%B6%E4%BD%9C%E5%A5%BD%E7%9C%8B%E7%9A%84%E9%9D%92%E8%89%B2%E8%8A%B1%E7%BA%B9%E5%AD%97/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/05/10/PS%E5%88%B6%E4%BD%9C%E5%A5%BD%E7%9C%8B%E7%9A%84%E9%9D%92%E8%89%B2%E8%8A%B1%E7%BA%B9%E5%AD%97/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
 
         </div>
       </header>
@@ -344,14 +481,21 @@
     
     <div class="post-body" itemprop="articleBody">
           <p>本教程介绍类似青花瓷字效果的制作方法。大致过程：打好文字后，把花纹素材应用到文字上面。然后用图层样式等加上浮雕效果，后期增加高光及装饰等即可。 最终效果（我比较菜请轻喷）：</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/05/10/PS%E5%88%B6%E4%BD%9C%E5%A5%BD%E7%9C%8B%E7%9A%84%E9%9D%92%E8%89%B2%E8%8A%B1%E7%BA%B9%E5%AD%97/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
+<!---more--->
+<p><img data-src="https://cdn.jsdelivr.net/gh/geniucker/source@0.0.24/image/20200510-1/16.webp" alt=""> </p>
+<h1 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h1><ul>
+<li>PS</li>
+<li>可从 <a target="_blank" rel="noopener" href="https://geniucker.lanzous.com/icg6bvg">这里</a> 下载制作青花瓷文字可能用到的素材</li>
+</ul>
+<h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1><h2 id="新建一个大小自定的文档，背景填充浅蓝到深蓝的径向渐变，作为背景（颜色不限，好看就行）。"><a href="#新建一个大小自定的文档，背景填充浅蓝到深蓝的径向渐变，作为背景（颜色不限，好看就行）。" class="headerlink" title="新建一个大小自定的文档，背景填充浅蓝到深蓝的径向渐变，作为背景（颜色不限，好看就行）。"></a>新建一个大小自定的文档，背景填充浅蓝到深蓝的径向渐变，作为背景（颜色不限，好看就行）。</h2><p><img data-src="https://cdn.jsdelivr.net/gh/geniucker/source@0.0.24/image/20200510-1/1.webp" alt=""></p>
+<h2 id="选择文字工具，打上文字，颜色及效果如下图。"><a href="#选择文字工具，打上文字，颜色及效果如下图。" class="headerlink" title="选择文字工具，打上文字，颜色及效果如下图。"></a>选择文字工具，打上文字，颜色及效果如下图。</h2><p><img data-src="https://cdn.jsdelivr.net/gh/geniucker/source@0.0.24/image/20200510-1/2.webp" alt=""></p>
+<h2 id="打开下图所示的花纹素材，拖进来，覆盖到文字上，然后按Ctrl点图层面板文字缩略图得到文字选区，然后按Ctrl-Shift-I-反选，按-Delete-删除图层2多出部分。"><a href="#打开下图所示的花纹素材，拖进来，覆盖到文字上，然后按Ctrl点图层面板文字缩略图得到文字选区，然后按Ctrl-Shift-I-反选，按-Delete-删除图层2多出部分。" class="headerlink" title="打开下图所示的花纹素材，拖进来，覆盖到文字上，然后按Ctrl点图层面板文字缩略图得到文字选区，然后按Ctrl + Shift + I 反选，按 Delete 删除图层2多出部分。"></a>打开下图所示的花纹素材，拖进来，覆盖到文字上，然后按<kbd>Ctrl</kbd>点图层面板文字缩略图<strong>得到文字选区</strong>，然后按<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd> 反选，按 <kbd>Delete</kbd> 删除图层2多出部分。</h2><p><img data-src="https://cdn.jsdelivr.net/gh/geniucker/source@0.0.24/image/20200510-1/3.webp" alt=""><br><img data-src="https://cdn.jsdelivr.net/gh/geniucker/source@0.0.24/image/20200510-1/4.webp" alt=""><br><img data-src="https://cdn.jsdelivr.net/gh/geniucker/source@0.0.24/image/20200510-1/5.webp" alt=""><br>栅格化“花纹”图层，反选后清除，得到这样<br><img data-src="https://cdn.jsdelivr.net/gh/geniucker/source@0.0.24/image/20200510-1/6.webp" alt=""></p>
+<h2 id="添加图层样式（花纹图层），选择斜面与浮雕，参数设置如下图。"><a href="#添加图层样式（花纹图层），选择斜面与浮雕，参数设置如下图。" class="headerlink" title="添加图层样式（花纹图层），选择斜面与浮雕，参数设置如下图。"></a>添加图层样式（花纹图层），选择斜面与浮雕，参数设置如下图。</h2><p><img data-src="https://cdn.jsdelivr.net/gh/geniucker/source@0.0.24/image/20200510-1/7.webp" alt=""><br><img data-src="https://cdn.jsdelivr.net/gh/geniucker/source@0.0.24/image/20200510-1/8.webp" alt=""><br>得到<br><img data-src="https://cdn.jsdelivr.net/gh/geniucker/source@0.0.24/image/20200510-1/9.webp" alt="">  </p>
+<h2 id="新建图层，绘制路径"><a href="#新建图层，绘制路径" class="headerlink" title="新建图层，绘制路径"></a>新建图层，绘制路径</h2><p>可以用钢笔工具的弯度钢笔工具<br><img data-src="https://cdn.jsdelivr.net/gh/geniucker/source@0.0.24/image/20200510-1/10.webp" alt=""><br><img data-src="https://cdn.jsdelivr.net/gh/geniucker/source@0.0.24/image/20200510-1/11.webp" alt="">  </p>
+<h2 id="绘制好路径后按Ctrl-Enter转为选区，在上一步新建的图层拉白色到透明的线性渐变如下图。然后调出文字选区（按住Ctrl点击文字图层的缩略图，前文有说明），按Ctrl-Shift-I-反选，按Delete删除图层3多出部分。"><a href="#绘制好路径后按Ctrl-Enter转为选区，在上一步新建的图层拉白色到透明的线性渐变如下图。然后调出文字选区（按住Ctrl点击文字图层的缩略图，前文有说明），按Ctrl-Shift-I-反选，按Delete删除图层3多出部分。" class="headerlink" title="绘制好路径后按Ctrl + Enter转为选区，在上一步新建的图层拉白色到透明的线性渐变如下图。然后调出文字选区（按住Ctrl点击文字图层的缩略图，前文有说明），按Ctrl + Shift + I 反选，按Delete删除图层3多出部分。"></a>绘制好路径后按<kbd>Ctrl</kbd> + <kbd>Enter</kbd>转为选区，在上一步新建的图层拉白色到透明的线性渐变如下图。然后调出文字选区（按住<kbd>Ctrl</kbd>点击文字图层的缩略图，前文有说明），按<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd> 反选，按<kbd>Delete</kbd>删除图层3多出部分。</h2><p><img data-src="https://cdn.jsdelivr.net/gh/geniucker/source@0.0.24/image/20200510-1/12.webp" alt=""></p>
+<h2 id="为文字添加倒影"><a href="#为文字添加倒影" class="headerlink" title="为文字添加倒影"></a>为文字添加倒影</h2><p>复制花纹图层，垂直翻转拖动到适当位置<br><img data-src="https://cdn.jsdelivr.net/gh/geniucker/source@0.0.24/image/20200510-1/13.webp" alt=""><br>添加蒙版<br><img data-src="https://cdn.jsdelivr.net/gh/geniucker/source@0.0.24/image/20200510-1/14.webp" alt=""><br>在蒙版中拉黑到白的渐变<br><img data-src="https://cdn.jsdelivr.net/gh/geniucker/source@0.0.24/image/20200510-1/15.webp" alt="">  </p>
+<h2 id="在文字周围装饰一些素材，效果如下图。"><a href="#在文字周围装饰一些素材，效果如下图。" class="headerlink" title="在文字周围装饰一些素材，效果如下图。"></a>在文字周围装饰一些素材，效果如下图。</h2><p><img data-src="https://cdn.jsdelivr.net/gh/geniucker/source@0.0.24/image/20200510-1/16.webp" alt="">  </p>
+
       
     </div>
 
@@ -373,7 +517,7 @@
     <link itemprop="mainEntityOfPage" href="https://geniucker.js.org/2020/04/25/Hexo-NexT%E4%B8%BB%E9%A2%98%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8F%8B%E9%93%BE%E9%A1%B5%E9%9D%A2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/geniucker/source@0.0.23/avatar.webp">
       <meta itemprop="name" content="Geniucker">
       <meta itemprop="description" content="崇尚技术">
     </span>
@@ -416,6 +560,27 @@
             </span>
 
           
+            <span id="/2020/04/25/Hexo-NexT%E4%B8%BB%E9%A2%98%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8F%8B%E9%93%BE%E9%A1%B5%E9%9D%A2/" class="post-meta-item leancloud_visitors" data-flag-title="Hexo NexT主题自定义友链页面" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">评论数：</span>
+    
+    <a title="valine" href="/2020/04/25/Hexo-NexT%E4%B8%BB%E9%A2%98%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8F%8B%E9%93%BE%E9%A1%B5%E9%9D%A2/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/04/25/Hexo-NexT%E4%B8%BB%E9%A2%98%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8F%8B%E9%93%BE%E9%A1%B5%E9%9D%A2/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
 
         </div>
       </header>
@@ -424,15 +589,23 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>Next主题可增加友链，在主题配置文件<code>_config.yml</code>中<code>links</code>下添加，展示效果（图片来自<a href="https://links.jianshu.com/go?to=https%3A%2F%2Fwww.liaofuzhan.com" target="_blank" rel="noopener">北宸的小站</a>）：
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/04/25/Hexo-NexT%E4%B8%BB%E9%A2%98%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8F%8B%E9%93%BE%E9%A1%B5%E9%9D%A2/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
+          <p>Next主题可增加友链，在主题配置文件<code>_config.yml</code>中<code>links</code>下添加，展示效果（图片来自<a target="_blank" rel="noopener" href="https://links.jianshu.com/go?to=https%3A%2F%2Fwww.liaofuzhan.com">北宸的小站</a>）：<!---more---><br><img data-src="https://cdn.jsdelivr.net/gh/geniucker/source/image/20200425-1-1.jpg" alt=""><br>当链接变多以后，页面的排版很不美观，这时候就需要给友链新增一个单独的页面了。网上其他的方法大部分都涉及到对模板的改动,会给日后的主题升级带来麻烦。本文的方法不涉及对模板的改动，但原理与网上的方法类似。<strong>本方法适用于NexT6.0.2及以上（由于涉及到styles.styl等Hexo数据目录的操作）</strong></p>
+<h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1><h2 id="新增links页面"><a href="#新增links页面" class="headerlink" title="新增links页面"></a>新增links页面</h2><p>在博客目录下的控制台执行：</p>
+<pre><code>hexo new page links</code></pre><p>在创建的<code>source\links\index.md</code>中添加如下内容（不删除原有内容，在最后添加）：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;links&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;links-content&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;link-navigation&quot;</span>&gt;</span></span><br><span class="line">&#123;% for link in site.data.links %&#125;</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;card&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;&#123;&#123; link.site &#125;&#125;&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">img</span> <span class="attr">class</span>=<span class="string">&quot;ava&quot;</span> <span class="attr">src</span>=<span class="string">&quot;&#123;&#123; link.avatar &#125;&#125;&quot;</span>/&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;card-header&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;&#123;&#123; link.site &#125;&#125;&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span>&gt;</span>&#123;&#123; link.name &#125;&#125;<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;&#123;&#123; link.site &#125;&#125;&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;focus-links&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fa fa-plus&quot;</span> <span class="attr">aria-hidden</span>=<span class="string">&quot;true&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span><span class="symbol">&amp;nbsp;</span>关注<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;info&quot;</span> <span class="attr">title</span>=<span class="string">&quot;&#123;&#123; link.info &#125;&#125;&quot;</span>&gt;</span>&#123;&#123; link.info &#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">&#123;% endfor %&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="修改-styles-styl-文件"><a href="#修改-styles-styl-文件" class="headerlink" title="修改 styles.styl 文件"></a>修改 styles.styl 文件</h2><p>用文本编辑器打开<code>source\_data\styles.styl</code>文件（无则创建），在末尾添加如下内容（不删除原有内容）：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-id">#links</span>&#123;</span><br><span class="line">    <span class="attribute">margin-top</span>: <span class="number">5rem</span>;</span><br><span class="line">    .links-content&#123;</span><br><span class="line">        <span class="selector-tag">margin-top</span><span class="selector-pseudo">:1rem</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="selector-class">.link-navigation</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">        <span class="attribute">content</span>: <span class="string">&quot; &quot;</span>;</span><br><span class="line">        <span class="attribute">display</span>: block;</span><br><span class="line">        <span class="attribute">clear</span>: both;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="selector-class">.card</span> &#123;</span><br><span class="line">        <span class="attribute">width</span>: <span class="number">300px</span>;</span><br><span class="line">        <span class="attribute">font-size</span>: <span class="number">1.1em</span>;</span><br><span class="line">        <span class="attribute">padding</span>: <span class="number">10px</span> <span class="number">20px</span>;</span><br><span class="line">        <span class="attribute">border-radius</span>: <span class="number">4px</span>;</span><br><span class="line">        <span class="attribute">transition-duration</span>: <span class="number">0.15s</span>;</span><br><span class="line">        <span class="attribute">margin-bottom</span>: <span class="number">1rem</span>;</span><br><span class="line">        <span class="attribute">display</span>:flex;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="selector-class">.card</span><span class="selector-pseudo">:nth-child(odd)</span> &#123;</span><br><span class="line">        <span class="attribute">float</span>: left;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="selector-class">.card</span><span class="selector-pseudo">:nth-child(even)</span> &#123;</span><br><span class="line">        <span class="attribute">float</span>: right;</span><br><span class="line">        +mobile() &#123;</span><br><span class="line">            <span class="selector-tag">float</span>: <span class="selector-tag">left</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="selector-class">.card</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">        <span class="attribute">transform</span>: <span class="built_in">scale</span>(<span class="number">1.1</span>);</span><br><span class="line">        <span class="attribute">box-shadow</span>: <span class="number">0</span> <span class="number">2px</span> <span class="number">6px</span> <span class="number">0</span> <span class="built_in">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.12</span>), <span class="number">0</span> <span class="number">0</span> <span class="number">6px</span> <span class="number">0</span> <span class="built_in">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.04</span>);</span><br><span class="line">        <span class="attribute">background</span>: <span class="built_in">rgba</span>(<span class="number">68</span>, <span class="number">68</span>, <span class="number">68</span>, <span class="number">0.12</span>)</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="selector-class">.card</span> <span class="selector-tag">a</span> &#123;</span><br><span class="line">        <span class="attribute">border</span>:none;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="selector-class">.card</span> <span class="selector-class">.ava</span> &#123;</span><br><span class="line">        <span class="attribute">width</span>: <span class="number">3rem</span><span class="meta">!important</span>;</span><br><span class="line">        <span class="attribute">height</span>: <span class="number">3rem</span><span class="meta">!important</span>;</span><br><span class="line">        <span class="attribute">margin</span>:<span class="number">0</span><span class="meta">!important</span>;</span><br><span class="line">        <span class="attribute">margin-right</span>: <span class="number">1em</span><span class="meta">!important</span>;</span><br><span class="line">        <span class="attribute">border-radius</span>:<span class="number">50%</span></span><br><span class="line">        transition: transform <span class="number">1s</span> ease-out;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="selector-class">.ava</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">            <span class="attribute">transform</span>: <span class="built_in">rotateZ</span>(<span class="number">360deg</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    <span class="selector-class">.card</span> <span class="selector-class">.card-header</span> &#123;</span><br><span class="line">        <span class="attribute">font-style</span>: italic;</span><br><span class="line">        <span class="attribute">overflow</span>: hidden;</span><br><span class="line">        <span class="attribute">width</span>: <span class="number">236px</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="selector-class">.card</span> <span class="selector-class">.card-header</span> <span class="selector-tag">a</span> &#123;</span><br><span class="line">        <span class="attribute">font-style</span>: normal;</span><br><span class="line">        <span class="attribute">color</span>: <span class="number">#2bbc8a</span>;</span><br><span class="line">        <span class="attribute">font-weight</span>: bold;</span><br><span class="line">        <span class="attribute">text-decoration</span>: none;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="selector-class">.card</span> <span class="selector-class">.card-header</span> <span class="selector-tag">a</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">        <span class="attribute">color</span>: <span class="number">#d480aa</span>;</span><br><span class="line">        <span class="attribute">text-decoration</span>: none;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="selector-class">.card</span> <span class="selector-class">.card-header</span> <span class="selector-class">.info</span> &#123;</span><br><span class="line">        <span class="attribute">font-style</span>:normal;</span><br><span class="line">        <span class="attribute">color</span>:<span class="number">#a3a3a3</span>;</span><br><span class="line">        <span class="attribute">font-size</span>:<span class="number">14px</span>;</span><br><span class="line">        <span class="attribute">min-width</span>: <span class="number">0</span>;</span><br><span class="line">        <span class="attribute">text-overflow</span>: ellipsis;</span><br><span class="line">        <span class="attribute">overflow</span>: hidden;</span><br><span class="line">        <span class="attribute">white-space</span>: nowrap;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="selector-tag">span</span><span class="selector-class">.focus-links</span>&#123;</span><br><span class="line">        <span class="attribute">vertical-align</span>:<span class="number">1px</span>;</span><br><span class="line">        <span class="attribute">font-style</span>:normal;</span><br><span class="line">        <span class="attribute">margin-left</span>:<span class="number">10px</span>;</span><br><span class="line">        <span class="attribute">position</span>:unset;</span><br><span class="line">        <span class="attribute">left</span>:<span class="number">0</span>;</span><br><span class="line">        <span class="attribute">padding</span>:<span class="number">0</span> <span class="number">7px</span> <span class="number">0</span> <span class="number">5px</span>;</span><br><span class="line">        <span class="attribute">font-size</span>:<span class="number">11px</span>;</span><br><span class="line">        <span class="attribute">border-color</span>:<span class="number">#42c02e</span>;</span><br><span class="line">        <span class="attribute">border-radius</span>:<span class="number">40px</span>;</span><br><span class="line">        <span class="attribute">line-height</span>:<span class="number">24px</span>;</span><br><span class="line">        <span class="attribute">height</span>:<span class="number">24px</span>;</span><br><span class="line">        <span class="attribute">color</span>:<span class="number">#fff</span><span class="meta">!important</span>;</span><br><span class="line">        <span class="attribute">background-color</span>:<span class="number">#2bbc8a</span>;</span><br><span class="line">        <span class="attribute">display</span>:inline-block</span><br><span class="line">        &#125;</span><br><span class="line">    <span class="selector-tag">span</span><span class="selector-class">.focus-links</span><span class="selector-pseudo">:hover</span>&#123;<span class="attribute">background-color</span>:<span class="number">#318024</span>&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>在主题配置文件<code>_config.yml</code>的<code>custom_file_path</code>下取消<code>style: source/_data/styles.styl</code>的注释</p>
+<h2 id="新建-links-yml-并配置友链"><a href="#新建-links-yml-并配置友链" class="headerlink" title="新建 links.yml 并配置友链"></a>新建 links.yml 并配置友链</h2><p>在<code>source\_data</code>下新建links.yml文件并用文本编辑器打开，添加如下内容：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Geniucker</span> <span class="comment">#友链名称</span></span><br><span class="line">  <span class="attr">avatar:</span> <span class="string">https://cdn.jsdelivr.net/gh/geniucker/source/avatar.jpg</span> <span class="comment">#友链头像</span></span><br><span class="line">  <span class="attr">site:</span> <span class="string">https://geniucker.js.org</span> <span class="comment">#友链地址</span></span><br><span class="line">  <span class="attr">info:</span> <span class="string">崇尚技术</span> <span class="comment">#友链说明</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">name:</span> <span class="string">cyc&#x27;s</span> <span class="string">blog</span></span><br><span class="line">  <span class="attr">avatar:</span> <span class="string">https://q1.qlogo.cn/g?b=qq&amp;nk=2516803593&amp;s=640</span></span><br><span class="line">  <span class="attr">site:</span> <span class="string">https://cyc2004.baklib.com</span></span><br><span class="line">  <span class="attr">info:</span> <span class="string">暂无介绍~</span></span><br></pre></td></tr></table></figure>
+<p>这里添加了两条友链，若添加多条方法类似</p>
+<h2 id="配置-menu"><a href="#配置-menu" class="headerlink" title="配置 menu"></a>配置 menu</h2><p>在主题配置文件<code>_config.yml</code>中<code>menu</code>下添加：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">友情链接:</span> <span class="string">/links/</span> <span class="string">||</span> <span class="string">link</span></span><br></pre></td></tr></table></figure>
+<p>NexT7.8.0以后为：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">友情链接:</span> <span class="string">/links/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-link</span></span><br></pre></td></tr></table></figure>
+<p>在主页的菜单即可看到友情链接</p>
+<h1 id="效果演示"><a href="#效果演示" class="headerlink" title="效果演示"></a>效果演示</h1><p><img data-src="https://cdn.jsdelivr.net/gh/geniucker/source/image/20200425-1-2.jpg" alt=""><br>我的<a href="/links/">友情链接页面</a></p>
+
       
     </div>
 
@@ -454,7 +627,7 @@
     <link itemprop="mainEntityOfPage" href="https://geniucker.js.org/2020/04/04/%E8%87%B4%E6%95%AC%E8%8B%B1%E9%9B%84%EF%BC%8C%E7%BC%85%E6%80%80%E9%80%9D%E8%80%85/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/geniucker/source@0.0.23/avatar.webp">
       <meta itemprop="name" content="Geniucker">
       <meta itemprop="description" content="崇尚技术">
     </span>
@@ -481,6 +654,27 @@
             </span>
 
           
+            <span id="/2020/04/04/%E8%87%B4%E6%95%AC%E8%8B%B1%E9%9B%84%EF%BC%8C%E7%BC%85%E6%80%80%E9%80%9D%E8%80%85/" class="post-meta-item leancloud_visitors" data-flag-title="致敬英雄，缅怀逝者" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">评论数：</span>
+    
+    <a title="valine" href="/2020/04/04/%E8%87%B4%E6%95%AC%E8%8B%B1%E9%9B%84%EF%BC%8C%E7%BC%85%E6%80%80%E9%80%9D%E8%80%85/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/04/04/%E8%87%B4%E6%95%AC%E8%8B%B1%E9%9B%84%EF%BC%8C%E7%BC%85%E6%80%80%E9%80%9D%E8%80%85/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
 
         </div>
       </header>
@@ -516,7 +710,7 @@
     <link itemprop="mainEntityOfPage" href="https://geniucker.js.org/2020/03/31/npm%E4%BD%BF%E7%94%A8%E5%9B%BD%E5%86%85%EF%BC%88%E6%B7%98%E5%AE%9D%EF%BC%89%E6%BA%90/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/geniucker/source@0.0.23/avatar.webp">
       <meta itemprop="name" content="Geniucker">
       <meta itemprop="description" content="崇尚技术">
     </span>
@@ -563,6 +757,27 @@
             </span>
 
           
+            <span id="/2020/03/31/npm%E4%BD%BF%E7%94%A8%E5%9B%BD%E5%86%85%EF%BC%88%E6%B7%98%E5%AE%9D%EF%BC%89%E6%BA%90/" class="post-meta-item leancloud_visitors" data-flag-title="npm使用国内（淘宝）源" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">评论数：</span>
+    
+    <a title="valine" href="/2020/03/31/npm%E4%BD%BF%E7%94%A8%E5%9B%BD%E5%86%85%EF%BC%88%E6%B7%98%E5%AE%9D%EF%BC%89%E6%BA%90/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/03/31/npm%E4%BD%BF%E7%94%A8%E5%9B%BD%E5%86%85%EF%BC%88%E6%B7%98%E5%AE%9D%EF%BC%89%E6%BA%90/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
 
         </div>
       </header>
@@ -573,14 +788,13 @@
     <div class="post-body" itemprop="articleBody">
           <hr>
 <p>&emsp;&emsp;npm是随同NodeJS一起安装的包管理工具，能解决NodeJS代码部署上的很多问题。然而，npm默认是从国外源下载包的，这样国内用户使用速度就会很慢。但是，我们可以配置国内镜像（淘宝）来解决这个问题。这里只介绍一种方法（另一种方法是使用cnpm，但我在使用过程中发现了一些问题，所以不推荐）：</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/03/31/npm%E4%BD%BF%E7%94%A8%E5%9B%BD%E5%86%85%EF%BC%88%E6%B7%98%E5%AE%9D%EF%BC%89%E6%BA%90/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
+<!---more--->
+<ol>
+<li>在控制台执行：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config set registry https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure></li>
+<li>验证命令：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config get registry</span><br></pre></td></tr></table></figure>
+如果返回<code>https://registry.npm.taobao.org</code>，说明镜像配置成功。</li>
+</ol>
+
       
     </div>
 
@@ -602,7 +816,7 @@
     <link itemprop="mainEntityOfPage" href="https://geniucker.js.org/2020/03/29/Chrome%E5%B0%8F%E6%8A%80%E5%B7%A7%EF%BC%9A%E8%AE%A9%E6%96%B0%E6%A0%87%E7%AD%BE%E9%A1%B5%E7%9A%84%E6%90%9C%E7%B4%A2%E6%A1%86%E5%8F%98%E6%88%90%E7%9C%9F%E7%9A%84/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/geniucker/source@0.0.23/avatar.webp">
       <meta itemprop="name" content="Geniucker">
       <meta itemprop="description" content="崇尚技术">
     </span>
@@ -645,6 +859,27 @@
             </span>
 
           
+            <span id="/2020/03/29/Chrome%E5%B0%8F%E6%8A%80%E5%B7%A7%EF%BC%9A%E8%AE%A9%E6%96%B0%E6%A0%87%E7%AD%BE%E9%A1%B5%E7%9A%84%E6%90%9C%E7%B4%A2%E6%A1%86%E5%8F%98%E6%88%90%E7%9C%9F%E7%9A%84/" class="post-meta-item leancloud_visitors" data-flag-title="Chrome小技巧：让新标签页的搜索框变成真的" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">评论数：</span>
+    
+    <a title="valine" href="/2020/03/29/Chrome%E5%B0%8F%E6%8A%80%E5%B7%A7%EF%BC%9A%E8%AE%A9%E6%96%B0%E6%A0%87%E7%AD%BE%E9%A1%B5%E7%9A%84%E6%90%9C%E7%B4%A2%E6%A1%86%E5%8F%98%E6%88%90%E7%9C%9F%E7%9A%84/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/03/29/Chrome%E5%B0%8F%E6%8A%80%E5%B7%A7%EF%BC%9A%E8%AE%A9%E6%96%B0%E6%A0%87%E7%AD%BE%E9%A1%B5%E7%9A%84%E6%90%9C%E7%B4%A2%E6%A1%86%E5%8F%98%E6%88%90%E7%9C%9F%E7%9A%84/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
 
         </div>
       </header>
@@ -655,14 +890,10 @@
     <div class="post-body" itemprop="articleBody">
           <hr>
 <p>&emsp;&emsp;使用Chrome的用户都知道，Chrome的新标签页的搜索框是“假的”，当你定位到搜索框开始输入时光标会立即跳到地址栏。这样的设计似乎有点反人类（仅个人意见，觉得不对请轻喷），尤其对于刚开始使用Chrome的用户来说需要花一段时间才能适应。其实，在Chrome的flags里有选项让搜索框变成“真的”。下面给出步骤：</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/03/29/Chrome%E5%B0%8F%E6%8A%80%E5%B7%A7%EF%BC%9A%E8%AE%A9%E6%96%B0%E6%A0%87%E7%AD%BE%E9%A1%B5%E7%9A%84%E6%90%9C%E7%B4%A2%E6%A1%86%E5%8F%98%E6%88%90%E7%9C%9F%E7%9A%84/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
+<!---more--->
+<h4 id="步骤一："><a href="#步骤一：" class="headerlink" title="步骤一："></a>步骤一：</h4><p>在Chrome的地址栏内输入<code>chrome://flags</code>进入如下页面：<br><img data-src="https://cdn.jsdelivr.net/gh/geniucker/source@latest/20200329-1-1.jpg" alt="pic1"></p>
+<h4 id="步骤二："><a href="#步骤二：" class="headerlink" title="步骤二："></a>步骤二：</h4><p>在搜索框中输入关键词<code>real search box</code>，将得到如下结果：<br><img data-src="https://cdn.jsdelivr.net/gh/geniucker/source@latest/20200329-1-2.jpg" alt="pic2"><br><code>Real search box in New Tab Page</code>：把新标签页的搜索框变成真的<br><code>Zero Suggestions in real search box on New Tab Page</code>：作用是单击新标签页中的搜索框能显示搜索记录<br><code>Make the New Tab page real search box match the omnibox&#39;s theme colors</code>：让新标签页的搜索框颜色和地址栏一样<br>把需要的功能右边的选择框中的<code>Default</code>改为<code>Enabled</code>并按照提示重启浏览器即可（重启可能导致其他标签页的数据丢失）。</p>
+
       
     </div>
 
@@ -728,8 +959,8 @@
   </span>
   <span class="author" itemprop="copyrightHolder">Geniucker</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
-  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div><script color="190,190,190" opacity="0.8" zIndex="-1" count="99" src="https://cdn.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.js"></script>
 
         
 
@@ -745,24 +976,58 @@
   </div>
 
   
-  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/next-theme/pjax@0/pjax.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
 
 <script src="/js/utils.js"></script>
 
 <script src="/js/motion.js"></script>
 
 
-<script src="/js/schemes/muse.js"></script>
-
-
 <script src="/js/next-boot.js"></script>
 
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '.page-configurations',
+    '.main-inner',
+    '.post-toc-wrap',
+    '.languages',
+    '.pjax'
+  ],
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+document.addEventListener('pjax:success', () => {
+  pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  const hasTOC = document.querySelector('.post-toc');
+  document.querySelector('.sidebar-inner').classList.toggle('sidebar-nav-active', hasTOC);
+  document.querySelector(hasTOC ? '.sidebar-nav-toc' : '.sidebar-nav-overview').click();
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
 
   
 
 
 
 
+  
+<script src="/js/local-search.js"></script>
 
 
 
@@ -774,9 +1039,36 @@
 
 
 
+
+
+    <div class="pjax">
   
 
   
+  <script src="//cdn.jsdelivr.net/npm/quicklink@2/dist/quicklink.umd.js"></script>
+  <script>
+      window.addEventListener('load', () => {
+      quicklink.listen({
+        timeout : 3000,
+        priority: true,
+        ignores : [uri => uri.includes('#'),uri => uri === 'https://geniucker.js.org/',]
+      });
+      });
+  </script>
 
+
+<script>
+NexT.utils.loadComments('#valine-comments', () => {
+  NexT.utils.getScript('https://cdn.jsdelivr.net/gh/geniucker/source@0.0.22/Valine.min.js', () => {
+    new Valine(Object.assign({
+      el  : '#valine-comments',
+      path: location.pathname,
+    }, {"enable":true,"appId":"ysYlaP1472LLNR6DROfSuYT3-MdYXbMMI","appKey":"G8M1LhWcIflNSEUEBzB1PM6s","placeholder":"欢迎留言！在这里说出你的想法（支持Markdown）！若要及时得到回复通知请填上常用的邮箱。","avatar":"mp","meta":["nick","mail","link"],"pageSize":6,"language":"zh-cn","visitor":true,"comment_count":true,"recordIP":false,"serverURLs":"https://us.leancloud.cn","enableQQ":false,"requiredFields":["nick","mail"],"notify":false,"verify":true,"emojiCDN":"https://cdn.jsdelivr.net/gh/geniucker/source@0.0.22/emoji/","emojiMaps":{"qq-1":"qq/qq-1.webp","qq-2":"qq/qq-2.webp","qq-3":"qq/qq-3.webp","qq-4":"qq/qq-4.webp","qq-5":"qq/qq-5.webp","qq-6":"qq/qq-6.webp","qq-7":"qq/qq-7.webp","qq-8":"qq/qq-8.webp","qq-9":"qq/qq-9.webp","qq-10":"qq/qq-10.webp","qq-11":"qq/qq-11.webp","qq-12":"qq/qq-12.webp","qq-13":"qq/qq-13.webp","qq-14":"qq/qq-14.webp","qq-15":"qq/qq-15.webp","qq-16":"qq/qq-16.webp","qq-17":"qq/qq-17.webp","qq-18":"qq/qq-18.webp","qq-19":"qq/qq-19.webp","qq-20":"qq/qq-20.webp","qq-21":"qq/qq-21.webp","qq-22":"qq/qq-22.webp","qq-23":"qq/qq-23.webp","qq-24":"qq/qq-24.webp","qq-25":"qq/qq-25.webp","qq-26":"qq/qq-26.webp","qq-27":"qq/qq-27.webp","qq-28":"qq/qq-28.webp","qq-29":"qq/qq-29.webp","qq-30":"qq/qq-30.webp","qq-31":"qq/qq-31.webp","qq-32":"qq/qq-32.webp","qq-33":"qq/qq-33.webp","qq-34":"qq/qq-34.webp","qq-35":"qq/qq-35.webp","qq-36":"qq/qq-36.webp","qq-37":"qq/qq-37.webp","qq-38":"qq/qq-38.webp","qq-39":"qq/qq-39.webp","qq-40":"qq/qq-40.webp","qq-41":"qq/qq-41.webp","qq-42":"qq/qq-42.webp","qq-43":"qq/qq-43.webp","qq-44":"qq/qq-44.webp","qq-45":"qq/qq-45.webp","qq-46":"qq/qq-46.webp","qq-47":"qq/qq-47.webp","qq-48":"qq/qq-48.webp","qq-49":"qq/qq-49.webp","qq-50":"qq/qq-50.webp","qq-51":"qq/qq-51.webp","qq-52":"qq/qq-52.webp","qq-53":"qq/qq-53.webp","qq-54":"qq/qq-54.webp","qq-55":"qq/qq-55.webp","qq-56":"qq/qq-56.webp","qq-57":"qq/qq-57.webp","qq-58":"qq/qq-58.webp","qq-59":"qq/qq-59.webp","qq-60":"qq/qq-60.webp","qq-61":"qq/qq-61.webp","qq-62":"qq/qq-62.webp","qq-63":"qq/qq-63.webp","qq-64":"qq/qq-64.webp","qq-65":"qq/qq-65.webp","qq-66":"qq/qq-66.webp","qq-67":"qq/qq-67.webp","qq-68":"qq/qq-68.webp","qq-69":"qq/qq-69.webp","qq-70":"qq/qq-70.webp","qq-71":"qq/qq-71.webp","qq-72":"qq/qq-72.webp","qq-73":"qq/qq-73.webp","qq-74":"qq/qq-74.webp","qq-75":"qq/qq-75.webp","qq-76":"qq/qq-76.webp","qq-77":"qq/qq-77.webp","qq-78":"qq/qq-78.webp","qq-79":"qq/qq-79.webp","qq-80":"qq/qq-80.webp","qq-81":"qq/qq-81.webp","qq-82":"qq/qq-82.webp","qq-83":"qq/qq-83.webp","qq-84":"qq/qq-84.webp","qq-85":"qq/qq-85.webp","qq-86":"qq/qq-86.webp","qq-87":"qq/qq-87.webp","qq-88":"qq/qq-88.webp","qq-89":"qq/qq-89.webp","qq-90":"qq/qq-90.webp","qq-91":"qq/qq-91.webp","qq-92":"qq/qq-92.webp","qq-93":"qq/qq-93.webp","qq-94":"qq/qq-94.webp","qq-95":"qq/qq-95.webp","qq-96":"qq/qq-96.webp","qq-97":"qq/qq-97.webp","qq-98":"qq/qq-98.webp","qq-99":"qq/qq-99.webp","qq-100":"qq/qq-100.webp","qq-101":"qq/qq-101.webp","tieba-1":"tieba/tieba-1.webp","tieba-2":"tieba/tieba-2.webp","tieba-3":"tieba/tieba-3.webp","tieba-4":"tieba/tieba-4.webp","tieba-5":"tieba/tieba-5.webp","tieba-6":"tieba/tieba-6.webp","tieba-7":"tieba/tieba-7.webp","tieba-8":"tieba/tieba-8.webp","tieba-9":"tieba/tieba-9.webp","tieba-10":"tieba/tieba-10.webp","tieba-11":"tieba/tieba-11.webp","tieba-12":"tieba/tieba-12.webp","tieba-13":"tieba/tieba-13.webp","tieba-14":"tieba/tieba-14.webp","tieba-15":"tieba/tieba-15.webp","tieba-16":"tieba/tieba-16.webp","tieba-17":"tieba/tieba-17.webp","tieba-18":"tieba/tieba-18.webp","tieba-19":"tieba/tieba-19.webp","tieba-20":"tieba/tieba-20.webp","tieba-21":"tieba/tieba-21.webp","tieba-22":"tieba/tieba-22.webp","tieba-23":"tieba/tieba-23.webp","tieba-24":"tieba/tieba-24.webp","tieba-25":"tieba/tieba-25.webp","tieba-26":"tieba/tieba-26.webp","tieba-27":"tieba/tieba-27.webp","tieba-28":"tieba/tieba-28.webp","tieba-29":"tieba/tieba-29.webp","tieba-30":"tieba/tieba-30.webp","tieba-31":"tieba/tieba-31.webp","tieba-32":"tieba/tieba-32.webp","tieba-33":"tieba/tieba-33.webp","tieba-34":"tieba/tieba-34.webp","tieba-35":"tieba/tieba-35.webp","tieba-36":"tieba/tieba-36.webp","tieba-37":"tieba/tieba-37.webp","tieba-38":"tieba/tieba-38.webp","tieba-39":"tieba/tieba-39.webp","tieba-40":"tieba/tieba-40.webp","tieba-41":"tieba/tieba-41.webp","tieba-42":"tieba/tieba-42.webp","tieba-43":"tieba/tieba-43.webp","tieba-44":"tieba/tieba-44.webp","tieba-45":"tieba/tieba-45.webp","tieba-46":"tieba/tieba-46.webp","tieba-47":"tieba/tieba-47.webp","tieba-48":"tieba/tieba-48.webp","tieba-49":"tieba/tieba-49.webp","tieba-50":"tieba/tieba-50.webp","tieba-51":"tieba/tieba-51.webp","tieba-52":"tieba/tieba-52.webp","tieba-53":"tieba/tieba-53.webp","tieba-54":"tieba/tieba-54.webp","smile":"2018new_weixioa02_org.webp","lovely":"2018new_keai_org.webp","happy":"2018new_taikaixin_org.webp","clap":"2018new_guzhang_thumb.webp","whee":"2018new_xixi_thumb.webp","haha":"2018new_haha_thumb.webp","laugh and cry":"2018new_xiaoku_thumb.webp","wink":"2018new_jiyan_org.webp","greddy":"2018new_chanzui_org.webp","awkward":"2018new_heixian_thumb.webp","sweat":"2018new_han_org.webp","pick nose":"2018new_wabi_thumb.webp","hum":"2018new_heng_thumb.webp","angry":"2018new_nu_thumb.webp","grievance":"2018new_weiqu_thumb.webp","poor":"2018new_kelian_org.webp","disappoint":"2018new_shiwang_thumb.webp","sad":"2018new_beishang_org.webp","tear":"2018new_leimu_org.webp","no way":"2018new_kuxiao_org.webp","shy":"2018new_haixiu_org.webp","dirt":"2018new_wu_thumb.webp","love you":"2018new_aini_org.webp","kiss":"2018new_qinqin_thumb.webp","amorousness":"2018new_huaxin_org.webp","longing":"2018new_chongjing_org.webp","desire":"2018new_tianping_thumb.webp","bad laugh":"2018new_huaixiao_org.webp","blackness":"2018new_yinxian_org.webp","laugh without word":"2018new_xiaoerbuyu_org.webp","titter":"2018new_touxiao_org.webp","cool":"2018new_ku_org.webp","not easy":"2018new_bingbujiandan_thumb.webp","think":"2018new_sikao_org.webp","question":"2018new_ningwen_org.webp","no idea":"2018new_wenhao_thumb.webp","dizzy":"2018new_yun_thumb.webp","bomb":"2018new_shuai_thumb.webp","bone":"2018new_kulou_thumb.webp","be quiet":"2018new_xu_org.webp","shut up":"2018new_bizui_org.webp","stupid":"2018new_shayan_org.webp","surprise":"2018new_chijing_org.webp","vomit":"2018new_tu_org.webp","cold":"2018new_kouzhao_thumb.webp","sick":"2018new_shengbing_thumb.webp","bye":"2018new_baibai_thumb.webp","look down on":"2018new_bishi_org.webp","white eye":"2018new_landelini_org.webp","left hum":"2018new_zuohengheng_thumb.webp","right hum":"2018new_youhengheng_thumb.webp","crazy":"2018new_zhuakuang_org.webp","scold":"2018new_zhouma_thumb.webp","hit on face":"2018new_dalian_org.webp","wow":"2018new_ding_org.webp","fan":"2018new_hufen02_org.webp","money":"2018new_qian_thumb.webp","yawn":"2018new_dahaqian_org.webp","sleepy":"2018new_kun_thumb.webp","sleep":"2018new_shuijiao_thumb.webp","watermelon":"2018new_chigua_thumb.webp","doge":"2018new_doge02_org.webp","dog":"2018new_erha_org.webp","cat":"2018new_miaomiao_thumb.webp","thumb":"2018new_zan_org.webp","good":"2018new_good_org.webp","ok":"2018new_ok_org.webp","yeah":"2018new_ye_thumb.webp","shack hand":"2018new_woshou_thumb.webp","bow":"2018new_zuoyi_org.webp","come":"2018new_guolai_thumb.webp","punch":"2018new_quantou_thumb.webp","高兴":"高兴.webp","鼓掌":"鼓掌.webp","黑线":"黑线.webp","不出所料":"不出所料.webp","狂汗":"狂汗.webp","亲亲":"亲亲.webp","献花":"献花.webp","击掌":"击掌.webp","赞一个":"赞一个.webp","得意":"得意.webp","脸红":"脸红.webp","惊喜":"惊喜.webp","想一想":"想一想.webp","蜡烛":"蜡烛.webp","装大款":"装大款.webp","观察":"观察.webp","口水":"口水.webp","吐":"吐.webp","吐舌":"吐舌.webp","吐血倒地":"吐血倒地.webp","不说话":"不说话.webp","不高兴":"不高兴.webp","中刀":"中刀.webp","中枪":"中枪.webp","呲牙":"呲牙.webp","咽气":"咽气.webp","哭泣":"哭泣.webp","喜极而泣":"喜极而泣.webp","喷水":"喷水.webp","中指":"中指.webp","喷血":"喷血.webp","坐等":"坐等.webp","害羞":"害羞.webp","小眼睛":"小眼睛.webp","愤怒":"愤怒.webp","尴尬":"尴尬.webp","扇耳光":"扇耳光.webp","投降":"投降.webp","抠鼻":"抠鼻.webp","抽烟":"抽烟.webp","无奈":"无奈.webp","无所谓":"无所谓.webp","无语":"无语.webp","暗地观察":"暗地观察.webp","欢呼":"欢呼.webp","期待":"期待.webp","汗":"汗.webp","深思":"深思.webp","便便":"便便.webp","献黄瓜":"献黄瓜.webp","内伤":"内伤.webp","皱眉":"皱眉.webp","看不见":"看不见.webp","看热闹":"看热闹.webp","瞅你":"瞅你.webp","肿包":"肿包.webp","锁眉":"锁眉.webp","邪恶":"邪恶.webp","长草":"长草.webp","阴暗":"阴暗.webp"}}
+    ));
+  }, window.Valine);
+});
+</script>
+
+    </div>
 <script src="https://cdn.jsdelivr.net/npm/live2d-widget@latest/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-haruto@latest/assets/haruto.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body>
 </html>
