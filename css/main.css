@@ -3204,6 +3204,7 @@ p {
   justify-content: center;
   margin: -8px;
   border-radius: 8px;
+  justify-content: flex-start;
   align-items: flex-start;
   line-height: 1.3;
 }
