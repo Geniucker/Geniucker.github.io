@@ -9,6 +9,13 @@
   </url>
   
   <url>
+    <loc>https://geniucker.now.sh/baidu_verify_J8jJd5FZOg</loc>
+    
+    <lastmod>2020-09-05</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://geniucker.now.sh/valine/</loc>
     
     <lastmod>2020-09-05</lastmod>
@@ -24,13 +31,6 @@
   
   <url>
     <loc>https://geniucker.now.sh/googled5ca1a9c57103100</loc>
-    
-    <lastmod>2020-07-31</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://geniucker.now.sh/baidu_verify_J8jJd5FZOg</loc>
     
     <lastmod>2020-07-31</lastmod>
     
@@ -179,13 +179,6 @@
   </url>
   
   <url>
-    <loc>https://geniucker.now.sh/tags/Hexo/</loc>
-    <lastmod>2020-09-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://geniucker.now.sh/tags/%E5%BB%BA%E7%AB%99/</loc>
     <lastmod>2020-09-05</lastmod>
     <changefreq>daily</changefreq>
@@ -193,7 +186,7 @@
   </url>
   
   <url>
-    <loc>https://geniucker.now.sh/tags/NexT%E4%B8%BB%E9%A2%98/</loc>
+    <loc>https://geniucker.now.sh/tags/Hexo/</loc>
     <lastmod>2020-09-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -221,7 +214,21 @@
   </url>
   
   <url>
+    <loc>https://geniucker.now.sh/tags/NexT%E4%B8%BB%E9%A2%98/</loc>
+    <lastmod>2020-09-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://geniucker.now.sh/tags/Python/</loc>
+    <lastmod>2020-09-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://geniucker.now.sh/tags/pip/</loc>
     <lastmod>2020-09-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -236,13 +243,6 @@
   
   <url>
     <loc>https://geniucker.now.sh/tags/%E5%85%AB%E7%9A%87%E5%90%8E%E9%97%AE%E9%A2%98/</loc>
-    <lastmod>2020-09-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://geniucker.now.sh/tags/pip/</loc>
     <lastmod>2020-09-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
