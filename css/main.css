@@ -1676,10 +1676,12 @@ pre code {
   line-height: 1.4;
   margin-top: 10px;
 }
+.site-state-item {
+  padding: 0 15px;
+}
 .site-state-item a {
   border-bottom: none;
   display: block;
-  padding: 0 15px;
 }
 .site-state-item-count {
   display: block;
@@ -2926,7 +2928,7 @@ mark.search-keyword {
   box-sizing: border-box;
   color: var(--text-color);
 }
-.site-state-item a {
+.site-state-item {
   padding: 0 10px;
 }
 .sidebar-button {

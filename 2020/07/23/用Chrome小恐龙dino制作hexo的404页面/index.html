@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.0.0">
+<meta name="generator" content="Hexo 5.1.1">
   <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/geniucker/source@0.0/logo/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/geniucker/source@0.0/logo/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/geniucker/source@0.0/logo/favicon-16x16-next.png">
@@ -21,13 +21,13 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"geniucker.js.org","root":"/","scheme":"Gemini","version":"8.0.0-rc.5","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+    var CONFIG = {"hostname":"geniucker.now.sh","root":"/","scheme":"Gemini","version":"8.0.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
 
   <meta name="description" content="&amp;emsp;&amp;emsp;404页面是客户端在浏览网页时，服务器无法正常提供信息，或是服务器无法回应，且不知道原因所返回的页面。据说在第三次科技革命之前，互联网的形态就是一个大型的中央数据库，这个数据库就设置在404房间里面。那时候所有的请求都是由人工手动完成的，如果在数据库中没有找到请求者所需要的文件，或者由于请求者写错了文件编号，用户就会得到一个返回信息：room 404 : file not">
 <meta property="og:type" content="article">
 <meta property="og:title" content="用Chrome小恐龙dino制作Hexo的404页面">
-<meta property="og:url" content="https://geniucker.js.org/2020/07/23/%E7%94%A8Chrome%E5%B0%8F%E6%81%90%E9%BE%99dino%E5%88%B6%E4%BD%9Chexo%E7%9A%84404%E9%A1%B5%E9%9D%A2/">
+<meta property="og:url" content="https://geniucker.now.sh/2020/07/23/%E7%94%A8Chrome%E5%B0%8F%E6%81%90%E9%BE%99dino%E5%88%B6%E4%BD%9Chexo%E7%9A%84404%E9%A1%B5%E9%9D%A2/">
 <meta property="og:site_name" content="Geniucker&#39;s Blog">
 <meta property="og:description" content="&amp;emsp;&amp;emsp;404页面是客户端在浏览网页时，服务器无法正常提供信息，或是服务器无法回应，且不知道原因所返回的页面。据说在第三次科技革命之前，互联网的形态就是一个大型的中央数据库，这个数据库就设置在404房间里面。那时候所有的请求都是由人工手动完成的，如果在数据库中没有找到请求者所需要的文件，或者由于请求者写错了文件编号，用户就会得到一个返回信息：room 404 : file not">
 <meta property="og:locale" content="zh_CN">
@@ -42,7 +42,7 @@
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/geniucker/source@0.0.32/image/20200723-1/1.png">
 
 
-<link rel="canonical" href="https://geniucker.js.org/2020/07/23/%E7%94%A8Chrome%E5%B0%8F%E6%81%90%E9%BE%99dino%E5%88%B6%E4%BD%9Chexo%E7%9A%84404%E9%A1%B5%E9%9D%A2/">
+<link rel="canonical" href="https://geniucker.now.sh/2020/07/23/%E7%94%A8Chrome%E5%B0%8F%E6%81%90%E9%BE%99dino%E5%88%B6%E4%BD%9Chexo%E7%9A%84404%E9%A1%B5%E9%9D%A2/">
 
 
 <script data-pjax class="page-configurations">
@@ -195,7 +195,7 @@
     <i class="fa fa-times-circle"></i>
   </span>
 </div>
-<div class="search-result-container">
+<div class="search-result-container no-result">
   <div class="search-result-icon">
     <i class="fa fa-spinner fa-pulse fa-5x"></i>
   </div>
@@ -304,7 +304,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://geniucker.js.org/2020/07/23/%E7%94%A8Chrome%E5%B0%8F%E6%81%90%E9%BE%99dino%E5%88%B6%E4%BD%9Chexo%E7%9A%84404%E9%A1%B5%E9%9D%A2/">
+    <link itemprop="mainEntityOfPage" href="https://geniucker.now.sh/2020/07/23/%E7%94%A8Chrome%E5%B0%8F%E6%81%90%E9%BE%99dino%E5%88%B6%E4%BD%9Chexo%E7%9A%84404%E9%A1%B5%E9%9D%A2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/geniucker/source@0.0.23/avatar.webp">
@@ -388,7 +388,7 @@
 img{margin-left: inherit;}
 </style>
 <p>把其中的<code>&lt;你的博客名&gt;</code>（第10行）改为你的博客名称</p>
-<h2 id="修改站点配置文件-config-yml"><a href="#修改站点配置文件-config-yml" class="headerlink" title="修改站点配置文件_config.yml"></a>修改站点配置文件<code>_config.yml</code></h2><p>找到站点配置文件<code>_config.yml</code>中的配置项<code>skip_render</code>，在原有的基础上加上<code>dino.html</code>，用<strong>英文</strong>逗号分隔，若值不止一个请使用中括号列表的形式，如图：<img data-src="https://cdn.jsdelivr.net/gh/geniucker/source@0.0.32/image/20200723-1/1.png" alt=""></p>
+<h2 id="修改站点配置文件-config-yml"><a href="#修改站点配置文件-config-yml" class="headerlink" title="修改站点配置文件_config.yml"></a>修改站点配置文件<code>_config.yml</code></h2><p>找到站点配置文件<code>_config.yml</code>中的配置项<code>skip_render</code>，在原有的基础上加上<code>dino.html</code>，用<strong>英文</strong>逗号分隔，若值不止一个请使用中括号列表的形式，如图：<img data-src="https://cdn.jsdelivr.net/gh/geniucker/source@0.0.32/image/20200723-1/1.png"></p>
 <h2 id="如果网页托管在Vercel，创建vercel-json"><a href="#如果网页托管在Vercel，创建vercel-json" class="headerlink" title="如果网页托管在Vercel，创建vercel.json"></a>如果网页托管在Vercel，创建<code>vercel.json</code></h2><p>如果网页托管在Vercel，创建<code>vercel.json</code>，内容如下：</p>
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;version&quot;</span>: <span class="number">2</span>,</span><br><span class="line">  <span class="attr">&quot;routes&quot;</span>: [</span><br><span class="line">    &#123; <span class="attr">&quot;handle&quot;</span>: <span class="string">&quot;filesystem&quot;</span> &#125;,</span><br><span class="line">    &#123; <span class="attr">&quot;src&quot;</span>: <span class="string">&quot;/(.*)&quot;</span>, <span class="attr">&quot;status&quot;</span>: <span class="number">404</span>, <span class="attr">&quot;dest&quot;</span>: <span class="string">&quot;/404.html&quot;</span> &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
     </div>
@@ -411,7 +411,7 @@ img{margin-left: inherit;}
   </li>
   <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://geniucker.js.org/2020/07/23/%E7%94%A8Chrome%E5%B0%8F%E6%81%90%E9%BE%99dino%E5%88%B6%E4%BD%9Chexo%E7%9A%84404%E9%A1%B5%E9%9D%A2/" title="用Chrome小恐龙dino制作Hexo的404页面">https://geniucker.js.org/2020/07/23/用Chrome小恐龙dino制作hexo的404页面/</a>
+      <a href="https://geniucker.now.sh/2020/07/23/%E7%94%A8Chrome%E5%B0%8F%E6%81%90%E9%BE%99dino%E5%88%B6%E4%BD%9Chexo%E7%9A%84404%E9%A1%B5%E9%9D%A2/" title="用Chrome小恐龙dino制作Hexo的404页面">https://geniucker.now.sh/2020/07/23/用Chrome小恐龙dino制作hexo的404页面/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -572,7 +572,7 @@ document.addEventListener('pjax:success', () => {
       quicklink.listen({
         timeout : 3000,
         priority: true,
-        ignores : [uri => uri.includes('#'),uri => uri === 'https://geniucker.js.org/2020/07/23/%E7%94%A8Chrome%E5%B0%8F%E6%81%90%E9%BE%99dino%E5%88%B6%E4%BD%9Chexo%E7%9A%84404%E9%A1%B5%E9%9D%A2/',]
+        ignores : [uri => uri.includes('#'),uri => uri === 'https://geniucker.now.sh/2020/07/23/%E7%94%A8Chrome%E5%B0%8F%E6%81%90%E9%BE%99dino%E5%88%B6%E4%BD%9Chexo%E7%9A%84404%E9%A1%B5%E9%9D%A2/',]
       });
       });
   </script>

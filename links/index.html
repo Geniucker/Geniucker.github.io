@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.0.0">
+<meta name="generator" content="Hexo 5.1.1">
   <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/geniucker/source@0.0/logo/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/geniucker/source@0.0/logo/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/geniucker/source@0.0/logo/favicon-16x16-next.png">
@@ -21,13 +21,13 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"geniucker.js.org","root":"/","scheme":"Gemini","version":"8.0.0-rc.5","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+    var CONFIG = {"hostname":"geniucker.now.sh","root":"/","scheme":"Gemini","version":"8.0.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
 
   <meta name="description" content="Thanks  本博客是在以下框架技术和开源服务的支持下搭建起来的：        Hexo  快速、简洁且高效的博客框架          Github Pages  项目站点支持          GitLab  项目支持和仓库镜像          JS.org  站点域名支持          cloudflare  网络安全性、性能和可靠性提供完整的解决方案          js">
 <meta property="og:type" content="website">
 <meta property="og:title" content="友人帐(不分先后顺序)">
-<meta property="og:url" content="https://geniucker.js.org/links/">
+<meta property="og:url" content="https://geniucker.now.sh/links/">
 <meta property="og:site_name" content="Geniucker&#39;s Blog">
 <meta property="og:description" content="Thanks  本博客是在以下框架技术和开源服务的支持下搭建起来的：        Hexo  快速、简洁且高效的博客框架          Github Pages  项目站点支持          GitLab  项目支持和仓库镜像          JS.org  站点域名支持          cloudflare  网络安全性、性能和可靠性提供完整的解决方案          js">
 <meta property="og:locale" content="zh_CN">
@@ -60,7 +60,7 @@
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/geniucker/source/link-avatar/hexo.png">
 
 
-<link rel="canonical" href="https://geniucker.js.org/links/">
+<link rel="canonical" href="https://geniucker.now.sh/links/">
 
 
 <script data-pjax class="page-configurations">
@@ -214,7 +214,7 @@
     <i class="fa fa-times-circle"></i>
   </span>
 </div>
-<div class="search-result-container">
+<div class="search-result-container no-result">
   <div class="search-result-icon">
     <i class="fa fa-spinner fa-pulse fa-5x"></i>
   </div>
@@ -635,7 +635,7 @@ Friends
 <p><strong>🍊 申请方式：</strong></p>
 <ul>
 <li>首先将本站的友链添加到您的站点，信息如下（可随您的站点修改，头像仅支持https）：<br><blockquote>
-<p>名称：Geniucker&#39;s Blog<br>头像：<a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/geniucker/source/avatar.jpg">https://cdn.jsdelivr.net/gh/geniucker/source/avatar.jpg</a><br>链接：<a href="https://geniucker.js.org">https://geniucker.js.org</a><br>描述：崇尚技术<br>友链背景颜色: #1e2340<br>友链文字颜色: #fff  </p>
+<p>名称：Geniucker&#39;s Blog<br>头像：<a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/geniucker/source/avatar.jpg">https://cdn.jsdelivr.net/gh/geniucker/source/avatar.jpg</a><br>链接：<a target="_blank" rel="noopener" href="https://geniucker.js.org/">https://geniucker.js.org</a><br>描述：崇尚技术<br>友链背景颜色: #1e2340<br>友链文字颜色: #fff  </p>
 </blockquote>
 </li>
 </ul>
@@ -783,7 +783,7 @@ document.addEventListener('pjax:success', () => {
       quicklink.listen({
         timeout : 3000,
         priority: true,
-        ignores : [uri => uri.includes('#'),uri => uri === 'https://geniucker.js.org/links/',]
+        ignores : [uri => uri.includes('#'),uri => uri === 'https://geniucker.now.sh/links/',]
       });
       });
   </script>
