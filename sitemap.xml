@@ -165,20 +165,6 @@
 
   
   <url>
-    <loc>https://geniucker.now.sh/tags/Chrome/</loc>
-    <lastmod>2020-10-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://geniucker.now.sh/tags/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/</loc>
-    <lastmod>2020-10-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://geniucker.now.sh/tags/%E5%BB%BA%E7%AB%99/</loc>
     <lastmod>2020-10-24</lastmod>
     <changefreq>daily</changefreq>
@@ -200,14 +186,14 @@
   </url>
   
   <url>
-    <loc>https://geniucker.now.sh/tags/PS/</loc>
+    <loc>https://geniucker.now.sh/tags/Chrome/</loc>
     <lastmod>2020-10-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://geniucker.now.sh/tags/%E8%8A%B1%E7%BA%B9/</loc>
+    <loc>https://geniucker.now.sh/tags/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/</loc>
     <lastmod>2020-10-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -228,7 +214,14 @@
   </url>
   
   <url>
-    <loc>https://geniucker.now.sh/tags/NexT%E4%B8%BB%E9%A2%98/</loc>
+    <loc>https://geniucker.now.sh/tags/PS/</loc>
+    <lastmod>2020-10-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://geniucker.now.sh/tags/%E8%8A%B1%E7%BA%B9/</loc>
     <lastmod>2020-10-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -256,6 +249,13 @@
   </url>
   
   <url>
+    <loc>https://geniucker.now.sh/tags/NexT%E4%B8%BB%E9%A2%98/</loc>
+    <lastmod>2020-10-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://geniucker.now.sh/tags/Chrome%E5%B0%8F%E6%81%90%E9%BE%99/</loc>
     <lastmod>2020-10-24</lastmod>
     <changefreq>daily</changefreq>
@@ -272,14 +272,14 @@
 
   
   <url>
-    <loc>https://geniucker.now.sh/categories/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7%E5%8F%8A%E5%B7%A5%E5%85%B7/</loc>
+    <loc>https://geniucker.now.sh/categories/Hexo%E5%BB%BA%E7%AB%99/</loc>
     <lastmod>2020-10-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://geniucker.now.sh/categories/Hexo%E5%BB%BA%E7%AB%99/</loc>
+    <loc>https://geniucker.now.sh/categories/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7%E5%8F%8A%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2020-10-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -300,14 +300,14 @@
   </url>
   
   <url>
-    <loc>https://geniucker.now.sh/categories/%E7%AC%94%E8%AE%B0/PS%E7%AC%94%E8%AE%B0/</loc>
+    <loc>https://geniucker.now.sh/categories/%E7%AC%94%E8%AE%B0/Python%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2020-10-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://geniucker.now.sh/categories/%E7%AC%94%E8%AE%B0/Python%E7%AC%94%E8%AE%B0/</loc>
+    <loc>https://geniucker.now.sh/categories/%E7%AC%94%E8%AE%B0/PS%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2020-10-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
