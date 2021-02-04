@@ -82,8 +82,8 @@ img{margin-left: inherit;}
         <category>Hexo建站</category>
       </categories>
       <tags>
-        <tag>Hexo</tag>
         <tag>建站</tag>
+        <tag>Hexo</tag>
         <tag>NexT主题</tag>
       </tags>
   </entry>
@@ -387,8 +387,8 @@ INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.</code></p
         <category>Hexo建站</category>
       </categories>
       <tags>
-        <tag>Hexo</tag>
         <tag>建站</tag>
+        <tag>Hexo</tag>
         <tag>GitHub Page</tag>
       </tags>
   </entry>
