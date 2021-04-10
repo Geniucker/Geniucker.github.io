@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.1.1">
+<meta name="generator" content="Hexo 5.4.0">
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/geniucker/source@0.0/logo/apple-touch-icon-next.png">
@@ -16,17 +16,14 @@
 
 
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
 
-<script class="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"geniucker.now.sh","root":"/","images":"/images","scheme":"Gemini","version":"8.2.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
-  </script>
+<meta name="hexo-config" content="{&quot;hostname&quot;:&quot;geniucker.vercel.app&quot;,&quot;root&quot;:&quot;/&quot;,&quot;images&quot;:&quot;/images&quot;,&quot;scheme&quot;:&quot;Gemini&quot;,&quot;version&quot;:&quot;8.3.0&quot;,&quot;exturl&quot;:false,&quot;sidebar&quot;:{&quot;position&quot;:&quot;left&quot;,&quot;display&quot;:&quot;post&quot;,&quot;padding&quot;:18,&quot;offset&quot;:12},&quot;copycode&quot;:true,&quot;bookmark&quot;:{&quot;enable&quot;:false,&quot;color&quot;:&quot;#222&quot;,&quot;save&quot;:&quot;auto&quot;},&quot;fancybox&quot;:false,&quot;mediumzoom&quot;:false,&quot;lazyload&quot;:true,&quot;pangu&quot;:false,&quot;comments&quot;:{&quot;style&quot;:&quot;tabs&quot;,&quot;active&quot;:null,&quot;storage&quot;:true,&quot;lazyload&quot;:false,&quot;nav&quot;:null},&quot;motion&quot;:{&quot;enable&quot;:true,&quot;async&quot;:false,&quot;transition&quot;:{&quot;post_block&quot;:&quot;fadeIn&quot;,&quot;post_header&quot;:&quot;fadeInDown&quot;,&quot;post_body&quot;:&quot;fadeInDown&quot;,&quot;coll_header&quot;:&quot;fadeInLeft&quot;,&quot;sidebar&quot;:&quot;fadeInUp&quot;}},&quot;prism&quot;:false,&quot;i18n&quot;:{&quot;placeholder&quot;:&quot;搜索...&quot;,&quot;empty&quot;:&quot;没有找到任何搜索结果：${query}&quot;,&quot;hits_time&quot;:&quot;找到 ${hits} 个搜索结果（用时 ${time} 毫秒）&quot;,&quot;hits&quot;:&quot;找到 ${hits} 个搜索结果&quot;},&quot;path&quot;:&quot;/search.xml&quot;,&quot;localsearch&quot;:{&quot;enable&quot;:true,&quot;trigger&quot;:&quot;auto&quot;,&quot;top_n_per_article&quot;:1,&quot;unescape&quot;:false,&quot;preload&quot;:false}}">
 <meta name="description" content="&amp;emsp;&amp;emsp;八皇后问题，是一个古老而著名的问题，是回溯算法的典型案例。该问题是国际西洋棋棋手马克斯·贝瑟尔于1848年提出：在8×8格的国际象棋上摆放八个皇后，使其不能互相攻击，即任意两个皇后都不能处于同一行、同一列或同一斜线上，问有多少种摆法。 高斯认为有76种方案。1854年在柏林的象棋杂志上不同的作者发表了40种不同的解，后来有人用图论的方法解出92种结果。计算机发明后，有多">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python 八皇后问题">
-<meta property="og:url" content="https://geniucker.now.sh/2020/03/26/Python-%E5%85%AB%E7%9A%87%E5%90%8E%E9%97%AE%E9%A2%98/">
+<meta property="og:url" content="https://geniucker.vercel.app/2020/03/26/Python-%E5%85%AB%E7%9A%87%E5%90%8E%E9%97%AE%E9%A2%98/">
 <meta property="og:site_name" content="Geniucker&#39;s Blog">
 <meta property="og:description" content="&amp;emsp;&amp;emsp;八皇后问题，是一个古老而著名的问题，是回溯算法的典型案例。该问题是国际西洋棋棋手马克斯·贝瑟尔于1848年提出：在8×8格的国际象棋上摆放八个皇后，使其不能互相攻击，即任意两个皇后都不能处于同一行、同一列或同一斜线上，问有多少种摆法。 高斯认为有76种方案。1854年在柏林的象棋杂志上不同的作者发表了40种不同的解，后来有人用图论的方法解出92种结果。计算机发明后，有多">
 <meta property="og:locale" content="zh_CN">
@@ -39,59 +36,21 @@
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://geniucker.now.sh/2020/03/26/Python-%E5%85%AB%E7%9A%87%E5%90%8E%E9%97%AE%E9%A2%98/">
+<link rel="canonical" href="https://geniucker.vercel.app/2020/03/26/Python-%E5%85%AB%E7%9A%87%E5%90%8E%E9%97%AE%E9%A2%98/">
 
 
-<script data-pjax class="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : false,
-    isPost : true,
-    lang   : 'zh-CN'
-  };
-</script>
-<title>Python 八皇后问题 | Geniucker's Blog</title>
+
+<meta name="hexo-config-page" content="{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:true,&quot;lang&quot;:&quot;zh-CN&quot;}">
+<meta name="hexo-config-calendar" content="">
+<title>Python 八皇后问题 | Geniucker's Blog</title><script data-pjax src="/js/load-config.js"></script>
   
 
 
 
 
   <noscript>
-  <style>
-  body { margin-top: 2rem; }
-
-  .use-motion .menu-item,
-  .use-motion .sidebar,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header {
-    visibility: visible;
-  }
-
-  .use-motion .header,
-  .use-motion .site-brand-container .toggle,
-  .use-motion .footer { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle,
-  .use-motion .custom-logo-image {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line {
-    transform: scaleX(1);
-  }
-
-  .search-pop-overlay, .sidebar-nav { display: none; }
-  .sidebar-panel { display: block; }
-  </style>
-</noscript>
-
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
 <link rel="alternate" href="/atom.xml" title="Geniucker's Blog" type="application/atom+xml">
 </head>
 
@@ -250,7 +209,7 @@
     </header>
 
     
-  <div class="back-to-top" role="button">
+  <div class="back-to-top" role="button" aria-label="返回顶部">
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
@@ -272,7 +231,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://geniucker.now.sh/2020/03/26/Python-%E5%85%AB%E7%9A%87%E5%90%8E%E9%97%AE%E9%A2%98/">
+    <link itemprop="mainEntityOfPage" href="https://geniucker.vercel.app/2020/03/26/Python-%E5%85%AB%E7%9A%87%E5%90%8E%E9%97%AE%E9%A2%98/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/geniucker/source@0.0.23/avatar.webp">
@@ -347,12 +306,12 @@
 <blockquote>
 <p>&emsp;&emsp;八皇后问题，是一个古老而著名的问题，是回溯算法的典型案例。该问题是国际西洋棋棋手马克斯·贝瑟尔于1848年提出：在8×8格的国际象棋上摆放八个皇后，使其不能互相攻击，即任意两个皇后都不能处于同一行、同一列或同一斜线上，问有多少种摆法。 高斯认为有76种方案。1854年在柏林的象棋杂志上不同的作者发表了40种不同的解，后来有人用图论的方法解出92种结果。计算机发明后，有多种计算机语言可以解决此问题。<p align="right">——百度百科</p></p>
 </blockquote>
-<a id="more"></a>
+<span id="more"></span>
 <p>这是上学期学Python的时候老师留给我们的一个思考题，一开始我和我一个同学是这么写的：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">k=<span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> a <span class="keyword">in</span> range(<span class="number">1</span>,<span class="number">9</span>):</span><br><span class="line">    a==a</span><br><span class="line">    <span class="keyword">for</span> b <span class="keyword">in</span> range(<span class="number">1</span>,<span class="number">9</span>):</span><br><span class="line">        <span class="keyword">if</span> b==a <span class="keyword">or</span> (abs(b-a)==<span class="number">1</span>):<span class="keyword">continue</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            b==b</span><br><span class="line">            <span class="keyword">for</span> c <span class="keyword">in</span> range(<span class="number">1</span>,<span class="number">9</span>):</span><br><span class="line">                <span class="keyword">if</span> c==b <span class="keyword">or</span> c==a <span class="keyword">or</span> (abs(c-b)==<span class="number">1</span>) <span class="keyword">or</span> (abs(c-a)==<span class="number">2</span>):<span class="keyword">continue</span></span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    c==c</span><br><span class="line">                    <span class="keyword">for</span> d <span class="keyword">in</span> range(<span class="number">1</span>,<span class="number">9</span>):</span><br><span class="line">                        <span class="keyword">if</span> d==c <span class="keyword">or</span> d==b <span class="keyword">or</span> d==a <span class="keyword">or</span> (abs(d-c)==<span class="number">1</span>) <span class="keyword">or</span> (abs(d-b)==<span class="number">2</span>) <span class="keyword">or</span> (abs(d-a)==<span class="number">3</span>):<span class="keyword">continue</span></span><br><span class="line">                        <span class="keyword">else</span>:</span><br><span class="line">                            d==d</span><br><span class="line">                            <span class="keyword">for</span> e <span class="keyword">in</span> range(<span class="number">1</span>,<span class="number">9</span>):</span><br><span class="line">                                <span class="keyword">if</span> e==d <span class="keyword">or</span> e==c <span class="keyword">or</span> e==b <span class="keyword">or</span> e==a <span class="keyword">or</span> (abs(e-d)==<span class="number">1</span>) <span class="keyword">or</span> (abs(e-c)==<span class="number">2</span>) <span class="keyword">or</span> (abs(e-b)==<span class="number">3</span>) <span class="keyword">or</span> (abs(e-a)==<span class="number">4</span>):<span class="keyword">continue</span></span><br><span class="line">                                <span class="keyword">else</span>:</span><br><span class="line">                                    e==e</span><br><span class="line">                                    <span class="keyword">for</span> f <span class="keyword">in</span> range(<span class="number">1</span>,<span class="number">9</span>):</span><br><span class="line">                                        <span class="keyword">if</span> f==e <span class="keyword">or</span> f==d <span class="keyword">or</span> f==c <span class="keyword">or</span> f==b <span class="keyword">or</span> f==a <span class="keyword">or</span> (abs(f-e)==<span class="number">1</span>) <span class="keyword">or</span> (abs(f-d)==<span class="number">2</span>) <span class="keyword">or</span> (abs(f-c)==<span class="number">3</span>) <span class="keyword">or</span> (abs(f-b)==<span class="number">4</span>) <span class="keyword">or</span> (abs(f-a)==<span class="number">5</span>):<span class="keyword">continue</span></span><br><span class="line">                                        <span class="keyword">else</span>:</span><br><span class="line">                                            f==f</span><br><span class="line">                                            <span class="keyword">for</span> g <span class="keyword">in</span> range(<span class="number">1</span>,<span class="number">9</span>):</span><br><span class="line">                                                <span class="keyword">if</span> g==f <span class="keyword">or</span> g==e <span class="keyword">or</span> g==d <span class="keyword">or</span> g==c <span class="keyword">or</span> g==b <span class="keyword">or</span> g==a <span class="keyword">or</span> (abs(g-f)==<span class="number">1</span>) <span class="keyword">or</span> (abs(g-e)==<span class="number">2</span>) <span class="keyword">or</span> (abs( g-d)==<span class="number">3</span>) <span class="keyword">or</span> (abs(g-c)==<span class="number">4</span>) <span class="keyword">or</span> (abs(g-b)==<span class="number">5</span>) <span class="keyword">or</span> (abs(g-a)==<span class="number">6</span>):<span class="keyword">continue</span></span><br><span class="line">                                                <span class="keyword">else</span>:</span><br><span class="line">                                                    g==g</span><br><span class="line">                                                    <span class="keyword">for</span> h <span class="keyword">in</span> range(<span class="number">1</span>,<span class="number">9</span>):</span><br><span class="line">                                                        <span class="keyword">if</span> h==g <span class="keyword">or</span> h==f <span class="keyword">or</span> h==e <span class="keyword">or</span> h==d <span class="keyword">or</span> h==c <span class="keyword">or</span> h==b <span class="keyword">or</span> h==a <span class="keyword">or</span> (abs(h-g)==<span class="number">1</span>) <span class="keyword">or</span> (abs(h-f)==<span class="number">2</span>)  <span class="keyword">or</span> (abs(h-e)==<span class="number">3</span>) <span class="keyword">or</span> (abs(h-d)==<span class="number">4</span>) <span class="keyword">or</span> (abs(h-c)==<span class="number">5</span>) <span class="keyword">or</span> (abs(h-b)== <span class="number">6</span>) <span class="keyword">or</span> (abs(h-a)==<span class="number">7</span>):<span class="keyword">continue</span></span><br><span class="line">                                                        <span class="keyword">else</span>:</span><br><span class="line">                                                            h==h</span><br><span class="line">                                                            k+=<span class="number">1</span></span><br><span class="line">                                                            print(<span class="string">&#x27;result&#x27;</span>,k,<span class="string">&#x27;:&#x27;</span>,<span class="string">&#x27;(1,&#x27;</span>,a,<span class="string">&#x27;),(2,&#x27;</span>,b,<span class="string">&#x27;),(3,&#x27;</span>,c,<span class="string">&#x27;),(4,&#x27;</span>,d,<span class="string">&#x27;),(5,&#x27;</span>,e,<span class="string">&#x27;),(6,&#x27;</span>,f,<span class="string">&#x27;),(7,&#x27;</span>,g,<span class="string">&#x27;),(8,&#x27;</span>,h,<span class="string">&#x27;)&#x27;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">k=<span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> a <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,<span class="number">9</span>):</span><br><span class="line">    a==a</span><br><span class="line">    <span class="keyword">for</span> b <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,<span class="number">9</span>):</span><br><span class="line">        <span class="keyword">if</span> b==a <span class="keyword">or</span> (<span class="built_in">abs</span>(b-a)==<span class="number">1</span>):<span class="keyword">continue</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            b==b</span><br><span class="line">            <span class="keyword">for</span> c <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,<span class="number">9</span>):</span><br><span class="line">                <span class="keyword">if</span> c==b <span class="keyword">or</span> c==a <span class="keyword">or</span> (<span class="built_in">abs</span>(c-b)==<span class="number">1</span>) <span class="keyword">or</span> (<span class="built_in">abs</span>(c-a)==<span class="number">2</span>):<span class="keyword">continue</span></span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    c==c</span><br><span class="line">                    <span class="keyword">for</span> d <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,<span class="number">9</span>):</span><br><span class="line">                        <span class="keyword">if</span> d==c <span class="keyword">or</span> d==b <span class="keyword">or</span> d==a <span class="keyword">or</span> (<span class="built_in">abs</span>(d-c)==<span class="number">1</span>) <span class="keyword">or</span> (<span class="built_in">abs</span>(d-b)==<span class="number">2</span>) <span class="keyword">or</span> (<span class="built_in">abs</span>(d-a)==<span class="number">3</span>):<span class="keyword">continue</span></span><br><span class="line">                        <span class="keyword">else</span>:</span><br><span class="line">                            d==d</span><br><span class="line">                            <span class="keyword">for</span> e <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,<span class="number">9</span>):</span><br><span class="line">                                <span class="keyword">if</span> e==d <span class="keyword">or</span> e==c <span class="keyword">or</span> e==b <span class="keyword">or</span> e==a <span class="keyword">or</span> (<span class="built_in">abs</span>(e-d)==<span class="number">1</span>) <span class="keyword">or</span> (<span class="built_in">abs</span>(e-c)==<span class="number">2</span>) <span class="keyword">or</span> (<span class="built_in">abs</span>(e-b)==<span class="number">3</span>) <span class="keyword">or</span> (<span class="built_in">abs</span>(e-a)==<span class="number">4</span>):<span class="keyword">continue</span></span><br><span class="line">                                <span class="keyword">else</span>:</span><br><span class="line">                                    e==e</span><br><span class="line">                                    <span class="keyword">for</span> f <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,<span class="number">9</span>):</span><br><span class="line">                                        <span class="keyword">if</span> f==e <span class="keyword">or</span> f==d <span class="keyword">or</span> f==c <span class="keyword">or</span> f==b <span class="keyword">or</span> f==a <span class="keyword">or</span> (<span class="built_in">abs</span>(f-e)==<span class="number">1</span>) <span class="keyword">or</span> (<span class="built_in">abs</span>(f-d)==<span class="number">2</span>) <span class="keyword">or</span> (<span class="built_in">abs</span>(f-c)==<span class="number">3</span>) <span class="keyword">or</span> (<span class="built_in">abs</span>(f-b)==<span class="number">4</span>) <span class="keyword">or</span> (<span class="built_in">abs</span>(f-a)==<span class="number">5</span>):<span class="keyword">continue</span></span><br><span class="line">                                        <span class="keyword">else</span>:</span><br><span class="line">                                            f==f</span><br><span class="line">                                            <span class="keyword">for</span> g <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,<span class="number">9</span>):</span><br><span class="line">                                                <span class="keyword">if</span> g==f <span class="keyword">or</span> g==e <span class="keyword">or</span> g==d <span class="keyword">or</span> g==c <span class="keyword">or</span> g==b <span class="keyword">or</span> g==a <span class="keyword">or</span> (<span class="built_in">abs</span>(g-f)==<span class="number">1</span>) <span class="keyword">or</span> (<span class="built_in">abs</span>(g-e)==<span class="number">2</span>) <span class="keyword">or</span> (<span class="built_in">abs</span>( g-d)==<span class="number">3</span>) <span class="keyword">or</span> (<span class="built_in">abs</span>(g-c)==<span class="number">4</span>) <span class="keyword">or</span> (<span class="built_in">abs</span>(g-b)==<span class="number">5</span>) <span class="keyword">or</span> (<span class="built_in">abs</span>(g-a)==<span class="number">6</span>):<span class="keyword">continue</span></span><br><span class="line">                                                <span class="keyword">else</span>:</span><br><span class="line">                                                    g==g</span><br><span class="line">                                                    <span class="keyword">for</span> h <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,<span class="number">9</span>):</span><br><span class="line">                                                        <span class="keyword">if</span> h==g <span class="keyword">or</span> h==f <span class="keyword">or</span> h==e <span class="keyword">or</span> h==d <span class="keyword">or</span> h==c <span class="keyword">or</span> h==b <span class="keyword">or</span> h==a <span class="keyword">or</span> (<span class="built_in">abs</span>(h-g)==<span class="number">1</span>) <span class="keyword">or</span> (<span class="built_in">abs</span>(h-f)==<span class="number">2</span>)  <span class="keyword">or</span> (<span class="built_in">abs</span>(h-e)==<span class="number">3</span>) <span class="keyword">or</span> (<span class="built_in">abs</span>(h-d)==<span class="number">4</span>) <span class="keyword">or</span> (<span class="built_in">abs</span>(h-c)==<span class="number">5</span>) <span class="keyword">or</span> (<span class="built_in">abs</span>(h-b)== <span class="number">6</span>) <span class="keyword">or</span> (<span class="built_in">abs</span>(h-a)==<span class="number">7</span>):<span class="keyword">continue</span></span><br><span class="line">                                                        <span class="keyword">else</span>:</span><br><span class="line">                                                            h==h</span><br><span class="line">                                                            k+=<span class="number">1</span></span><br><span class="line">                                                            <span class="built_in">print</span>(<span class="string">&#x27;result&#x27;</span>,k,<span class="string">&#x27;:&#x27;</span>,<span class="string">&#x27;(1,&#x27;</span>,a,<span class="string">&#x27;),(2,&#x27;</span>,b,<span class="string">&#x27;),(3,&#x27;</span>,c,<span class="string">&#x27;),(4,&#x27;</span>,d,<span class="string">&#x27;),(5,&#x27;</span>,e,<span class="string">&#x27;),(6,&#x27;</span>,f,<span class="string">&#x27;),(7,&#x27;</span>,g,<span class="string">&#x27;),(8,&#x27;</span>,h,<span class="string">&#x27;)&#x27;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>这显然是我们初学者最容易想到的一种办法。由于“学业比较繁忙”，当时一直没有去思考更好的实现，直到现在才重新开始思考这个问题。从原程序看，循环嵌套了8次，由此我想到（网上看到的）让函数自己调用自己——递归。</p>
 <p>整体思路：N皇后问题每行有且仅有一个皇后，用数组（Python只能列表）表示皇后的坐标（下标为行，至为列，为了方便第一行下标仍为0），在每一行都要用循环分别判断是否与前面任意一行在同一列或同一斜排，都满足条件进入下一行，直到行数=N进行输出。下面给出代码（为了方便注释，有些可以合并的地方我分行写了）：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">num=<span class="number">0</span> <span class="comment">#用来计数</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">huangHou</span>(<span class="params">A,hang=<span class="number">0</span></span>):</span><span class="comment">#A是一个列表，hang表示第n行</span></span><br><span class="line">    <span class="keyword">global</span> num</span><br><span class="line">    <span class="keyword">if</span> len(A)==hang:<span class="comment">#递归终止条件</span></span><br><span class="line">        num += <span class="number">1</span></span><br><span class="line">        print(num,end=<span class="string">&#x27;：&#x27;</span>)</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(len(A)):<span class="comment">#坐标形式输出</span></span><br><span class="line">            print(<span class="string">&#x27;(&#x27;</span>+str(i+<span class="number">1</span>)+<span class="string">&#x27;,&#x27;</span>+str(A[i])+<span class="string">&#x27;)&#x27;</span>,end=<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">        print(<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(len(A)):<span class="comment">#遍历第hang行的每一个位置</span></span><br><span class="line">            tem = <span class="literal">True</span><span class="comment">#用于标记是否满足条件</span></span><br><span class="line">            A[hang] = i<span class="comment">#填入列表</span></span><br><span class="line">            <span class="keyword">for</span> j <span class="keyword">in</span> range(hang):<span class="comment">#判断两个条件</span></span><br><span class="line">                <span class="keyword">if</span> (A[j]==A[hang])<span class="keyword">or</span>(abs(A[j]-A[hang])==hang-j):</span><br><span class="line">                    tem = <span class="literal">False</span></span><br><span class="line">                    <span class="keyword">break</span></span><br><span class="line">            <span class="keyword">if</span> tem:huangHou(A,hang+<span class="number">1</span>)<span class="comment">#若满足条件，进入下一行</span></span><br><span class="line">huangHou([<span class="literal">None</span>]*<span class="number">8</span>)<span class="comment">#只要填入有N个元素的列表即可解决N皇后问题</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">num=<span class="number">0</span> <span class="comment">#用来计数</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">huangHou</span>(<span class="params">A,hang=<span class="number">0</span></span>):</span><span class="comment">#A是一个列表，hang表示第n行</span></span><br><span class="line">    <span class="keyword">global</span> num</span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">len</span>(A)==hang:<span class="comment">#递归终止条件</span></span><br><span class="line">        num += <span class="number">1</span></span><br><span class="line">        <span class="built_in">print</span>(num,end=<span class="string">&#x27;：&#x27;</span>)</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(A)):<span class="comment">#坐标形式输出</span></span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&#x27;(&#x27;</span>+<span class="built_in">str</span>(i+<span class="number">1</span>)+<span class="string">&#x27;,&#x27;</span>+<span class="built_in">str</span>(A[i])+<span class="string">&#x27;)&#x27;</span>,end=<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(A)):<span class="comment">#遍历第hang行的每一个位置</span></span><br><span class="line">            tem = <span class="literal">True</span><span class="comment">#用于标记是否满足条件</span></span><br><span class="line">            A[hang] = i<span class="comment">#填入列表</span></span><br><span class="line">            <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(hang):<span class="comment">#判断两个条件</span></span><br><span class="line">                <span class="keyword">if</span> (A[j]==A[hang])<span class="keyword">or</span>(<span class="built_in">abs</span>(A[j]-A[hang])==hang-j):</span><br><span class="line">                    tem = <span class="literal">False</span></span><br><span class="line">                    <span class="keyword">break</span></span><br><span class="line">            <span class="keyword">if</span> tem:huangHou(A,hang+<span class="number">1</span>)<span class="comment">#若满足条件，进入下一行</span></span><br><span class="line">huangHou([<span class="literal">None</span>]*<span class="number">8</span>)<span class="comment">#只要填入有N个元素的列表即可解决N皇后问题</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>这样不但结构清晰还简短了许多。<br>本人小白一只，若有错误欢迎在评论区留言指正（最好留下邮箱方便联系）</p>
 
     </div>
@@ -375,7 +334,7 @@
   </li>
   <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://geniucker.now.sh/2020/03/26/Python-%E5%85%AB%E7%9A%87%E5%90%8E%E9%97%AE%E9%A2%98/" title="Python 八皇后问题">https://geniucker.now.sh/2020/03/26/Python-八皇后问题/</a>
+      <a href="https://geniucker.vercel.app/2020/03/26/Python-%E5%85%AB%E7%9A%87%E5%90%8E%E9%97%AE%E9%A2%98/" title="Python 八皇后问题">https://geniucker.vercel.app/2020/03/26/Python-八皇后问题/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -412,29 +371,7 @@
 
 
 
-    <div class="comments" id="valine-comments"></div>
-
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      const commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
+    <div class="comments" id="valine-comments"></div><script src="/js/comments.js"></script>
 </div>
   </main>
 
@@ -462,40 +399,7 @@
   <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@next-theme/pjax@0.4.0/pjax.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/lozad@1.16.0/dist/lozad.min.js"></script>
-<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script>
-var pjax = new Pjax({
-  selectors: [
-    'head title',
-    '.page-configurations',
-    '.main-inner',
-    '.post-toc-wrap',
-    '.languages',
-    '.pjax'
-  ],
-  analytics: false,
-  cacheBust: false,
-  scrollRestoration: false,
-  scrollTo: !CONFIG.bookmark.enable
-});
-
-document.addEventListener('pjax:success', () => {
-  pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
-  NexT.boot.refresh();
-  // Define Motion Sequence & Bootstrap Motion.
-  if (CONFIG.motion.enable) {
-    NexT.motion.integrator
-      .init()
-      .add(NexT.motion.middleWares.subMenu)
-      .add(NexT.motion.middleWares.postList)
-      .bootstrap();
-  }
-  const hasTOC = document.querySelector('.post-toc');
-  document.querySelector('.sidebar-inner').classList.toggle('sidebar-nav-active', hasTOC);
-  document.querySelector(hasTOC ? '.sidebar-nav-toc' : '.sidebar-nav-overview').click();
-  NexT.utils.updateSidebarPosition();
-});
-</script>
-
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
 
   
 <script src="/js/local-search.js"></script>
@@ -511,13 +415,13 @@ document.addEventListener('pjax:success', () => {
 
     <div class="pjax">
 
-  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.0.0/dist/quicklink.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.1.0/dist/quicklink.umd.js"></script>
   <script>
       window.addEventListener('load', () => {
       quicklink.listen({
         timeout : 3000,
         priority: true,
-        ignores : [uri => uri.includes('#'),uri => uri === 'https://geniucker.now.sh/2020/03/26/Python-%E5%85%AB%E7%9A%87%E5%90%8E%E9%97%AE%E9%A2%98/',]
+        ignores : [uri => uri.includes('#'),uri => uri === 'https://geniucker.vercel.app/2020/03/26/Python-%E5%85%AB%E7%9A%87%E5%90%8E%E9%97%AE%E9%A2%98/',]
       });
       });
   </script>

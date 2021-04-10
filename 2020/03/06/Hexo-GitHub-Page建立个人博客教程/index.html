@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.1.1">
+<meta name="generator" content="Hexo 5.4.0">
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/geniucker/source@0.0/logo/apple-touch-icon-next.png">
@@ -16,17 +16,14 @@
 
 
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
 
-<script class="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"geniucker.now.sh","root":"/","images":"/images","scheme":"Gemini","version":"8.2.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
-  </script>
+<meta name="hexo-config" content="{&quot;hostname&quot;:&quot;geniucker.vercel.app&quot;,&quot;root&quot;:&quot;/&quot;,&quot;images&quot;:&quot;/images&quot;,&quot;scheme&quot;:&quot;Gemini&quot;,&quot;version&quot;:&quot;8.3.0&quot;,&quot;exturl&quot;:false,&quot;sidebar&quot;:{&quot;position&quot;:&quot;left&quot;,&quot;display&quot;:&quot;post&quot;,&quot;padding&quot;:18,&quot;offset&quot;:12},&quot;copycode&quot;:true,&quot;bookmark&quot;:{&quot;enable&quot;:false,&quot;color&quot;:&quot;#222&quot;,&quot;save&quot;:&quot;auto&quot;},&quot;fancybox&quot;:false,&quot;mediumzoom&quot;:false,&quot;lazyload&quot;:true,&quot;pangu&quot;:false,&quot;comments&quot;:{&quot;style&quot;:&quot;tabs&quot;,&quot;active&quot;:null,&quot;storage&quot;:true,&quot;lazyload&quot;:false,&quot;nav&quot;:null},&quot;motion&quot;:{&quot;enable&quot;:true,&quot;async&quot;:false,&quot;transition&quot;:{&quot;post_block&quot;:&quot;fadeIn&quot;,&quot;post_header&quot;:&quot;fadeInDown&quot;,&quot;post_body&quot;:&quot;fadeInDown&quot;,&quot;coll_header&quot;:&quot;fadeInLeft&quot;,&quot;sidebar&quot;:&quot;fadeInUp&quot;}},&quot;prism&quot;:false,&quot;i18n&quot;:{&quot;placeholder&quot;:&quot;搜索...&quot;,&quot;empty&quot;:&quot;没有找到任何搜索结果：${query}&quot;,&quot;hits_time&quot;:&quot;找到 ${hits} 个搜索结果（用时 ${time} 毫秒）&quot;,&quot;hits&quot;:&quot;找到 ${hits} 个搜索结果&quot;},&quot;path&quot;:&quot;/search.xml&quot;,&quot;localsearch&quot;:{&quot;enable&quot;:true,&quot;trigger&quot;:&quot;auto&quot;,&quot;top_n_per_article&quot;:1,&quot;unescape&quot;:false,&quot;preload&quot;:false}}">
 <meta name="description" content="安装 GitGit是目前世界上最先进的分布式版本控制系统，可以有效、高速的处理从很小到非常大的项目版本管理。也就是用来管理你的hexo博客文章，上传到GitHub的工具。    Windows：下载并安装Git Linux (Ubuntu, Debian)：执行 sudo apt-get install git-core Linux (Fedora, Red Hat, CentOS)：执行 su">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo+GitHub Page建立个人博客教程">
-<meta property="og:url" content="https://geniucker.now.sh/2020/03/06/Hexo-GitHub-Page%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/">
+<meta property="og:url" content="https://geniucker.vercel.app/2020/03/06/Hexo-GitHub-Page%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/">
 <meta property="og:site_name" content="Geniucker&#39;s Blog">
 <meta property="og:description" content="安装 GitGit是目前世界上最先进的分布式版本控制系统，可以有效、高速的处理从很小到非常大的项目版本管理。也就是用来管理你的hexo博客文章，上传到GitHub的工具。    Windows：下载并安装Git Linux (Ubuntu, Debian)：执行 sudo apt-get install git-core Linux (Fedora, Red Hat, CentOS)：执行 su">
 <meta property="og:locale" content="zh_CN">
@@ -43,59 +40,21 @@
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/geniucker/source@latest/20200306-1-1.jpg">
 
 
-<link rel="canonical" href="https://geniucker.now.sh/2020/03/06/Hexo-GitHub-Page%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/">
+<link rel="canonical" href="https://geniucker.vercel.app/2020/03/06/Hexo-GitHub-Page%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/">
 
 
-<script data-pjax class="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : false,
-    isPost : true,
-    lang   : 'zh-CN'
-  };
-</script>
-<title>Hexo+GitHub Page建立个人博客教程 | Geniucker's Blog</title>
+
+<meta name="hexo-config-page" content="{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:true,&quot;lang&quot;:&quot;zh-CN&quot;}">
+<meta name="hexo-config-calendar" content="">
+<title>Hexo+GitHub Page建立个人博客教程 | Geniucker's Blog</title><script data-pjax src="/js/load-config.js"></script>
   
 
 
 
 
   <noscript>
-  <style>
-  body { margin-top: 2rem; }
-
-  .use-motion .menu-item,
-  .use-motion .sidebar,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header {
-    visibility: visible;
-  }
-
-  .use-motion .header,
-  .use-motion .site-brand-container .toggle,
-  .use-motion .footer { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle,
-  .use-motion .custom-logo-image {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line {
-    transform: scaleX(1);
-  }
-
-  .search-pop-overlay, .sidebar-nav { display: none; }
-  .sidebar-panel { display: block; }
-  </style>
-</noscript>
-
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
 <link rel="alternate" href="/atom.xml" title="Geniucker's Blog" type="application/atom+xml">
 </head>
 
@@ -255,7 +214,7 @@
     </header>
 
     
-  <div class="back-to-top" role="button">
+  <div class="back-to-top" role="button" aria-label="返回顶部">
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
@@ -277,7 +236,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://geniucker.now.sh/2020/03/06/Hexo-GitHub-Page%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/">
+    <link itemprop="mainEntityOfPage" href="https://geniucker.vercel.app/2020/03/06/Hexo-GitHub-Page%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/geniucker/source@0.0.23/avatar.webp">
@@ -351,7 +310,7 @@
 <li>Linux (Ubuntu, Debian)：执行 <code>sudo apt-get install git-core</code></li>
 <li>Linux (Fedora, Red Hat, CentOS)：执行 <code>sudo yum install git-core</code></li>
 </ul>
-<a id="more"></a><div class="note success"><p> <font size=5><strong>Windows 用户</strong></font><br>对于中国大陆地区用户，可以前往 <a target="_blank" rel="noopener" href="https://npm.taobao.org/mirrors/git-for-windows/">淘宝 Git for Windows 镜像</a> 下载Git安装包</p>
+<span id="more"></span><div class="note success"><p> <font size=5><strong>Windows 用户</strong></font><br>对于中国大陆地区用户，可以前往 <a target="_blank" rel="noopener" href="https://npm.taobao.org/mirrors/git-for-windows/">淘宝 Git for Windows 镜像</a> 下载Git安装包</p>
 </div>
 
 
@@ -365,13 +324,15 @@
 
 
 <h1 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h1><p>所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo。<br>在控制台内执行<code>npm install -g hexo-cli</code><br>安装以后，可以使用以下两种方式执行 Hexo：<br>1.<code>npx hexo &lt;command&gt;</code><br>2.将 Hexo 所在的目录下的 <code>node_modules</code> 添加到环境变量之中即可直接使用 <code>hexo &lt;command&gt;</code>：</p>
-<pre><code>echo &#39;PATH=&quot;$PATH:./node_modules/.bin&quot;&#39; &gt;&gt; ~/.profile</code></pre>
+<pre><code>echo &#39;PATH=&quot;$PATH:./node_modules/.bin&quot;&#39; &gt;&gt; ~/.profile
+</code></pre>
 <br>
 
 <p>安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件（&lt;folder&gt;为你要放博客的详细路径）</p>
 <pre><code>hexo init &lt;folder&gt;
 cd /d &lt;folder&gt;
-npm install</code></pre>
+npm install
+</code></pre>
 <p>新建完成后，指定文件夹下有：</p>
 <ul>
 <li><code>node_modules</code>：依赖文件夹</li>
@@ -384,22 +345,28 @@ npm install</code></pre>
 <h1 id="GitHub-创建个人仓库"><a href="#GitHub-创建个人仓库" class="headerlink" title="GitHub 创建个人仓库"></a>GitHub 创建个人仓库</h1><p>登录到GitHub,如果没有GitHub帐号，使用你的邮箱注册GitHub帐号 <a target="_blank" rel="noopener" href="https://github.com/join">点击注册</a>，点击GitHub中的New repository创建新仓库，仓库名应该为：<code>用户名</code>.github.io 这个<code>用户名</code>使用你的GitHub帐号名称代替，这是固定写法，比如我的仓库名称为 geniucker.github.io</p>
 <h1 id="配置-Git"><a href="#配置-Git" class="headerlink" title="配置 Git"></a>配置 Git</h1><h2 id="设置user-name和user-email配置信息"><a href="#设置user-name和user-email配置信息" class="headerlink" title="设置user.name和user.email配置信息"></a>设置user.name和user.email配置信息</h2><p>在任意目录右键打开 Git Bash ，设置user.name和user.email配置信息：</p>
 <pre><code>git config --global user.name &lt;user_name&gt;
-git config --global user.email &lt;user_email&gt;</code></pre>
+git config --global user.email &lt;user_email&gt;
+</code></pre>
 <p><code>&lt;user_name&gt;</code>和<code>&lt;user_email&gt;</code>分别为你的GitHub注册名和注册邮箱  </p>
 <h2 id="生成-SSH-Key-并完成连接"><a href="#生成-SSH-Key-并完成连接" class="headerlink" title="生成 SSH Key 并完成连接"></a>生成 SSH Key 并完成连接</h2><p>首先检查本地是否有ssh key </p>
-<pre><code>ls -al ~/.ssh</code></pre>
+<pre><code>ls -al ~/.ssh
+</code></pre>
 <p>如果终端输出的是：</p>
-<pre><code>No such file or directory</code></pre>
+<pre><code>No such file or directory
+</code></pre>
 <p>说明没有创建过SSH Key，创建SSH Key：</p>
-<pre><code>ssh-keygen -t rsa -C &lt;你的邮箱&gt;</code></pre>
+<pre><code>ssh-keygen -t rsa -C &lt;你的邮箱&gt;
+</code></pre>
 <p>替换上自己的邮箱，接着都按<kbd>Enter</kbd>确认即可<br>接着打开用户名目录下的.ssh文件夹（若是不清楚什么事用户目录可以把 <code>%USERPROFILE%\.ssh</code> 复制到计算机的地址栏里）中的id_rsa.pub中的内容全部复制（可用记事本等打开）  </p>
 <p>打开并登录GitHub，进入设置（点击角的头像，进入Settings），点击 <code>SSH and GPG keys</code> ，点击 <code>New SSH key</code> ，把刚才复制的内容粘贴到 Key 的文本框内，Title 随便填，点击 <code>Add SSH key</code> 完成添加。<br>会到 Git Bash，输入 <code>ssh git@github.com</code> <kbd>Enter</kbd>，若得到</p>
 <pre><code>The authenticity of host &#39;github.com (13.250.177.223)&#39; can&#39;t be established.
 RSA key fingerprint is   SHA256:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.
-Are you sure you want to continue connecting (yes/no)? </code></pre>
+Are you sure you want to continue connecting (yes/no)? 
+</code></pre>
 <p>输入yes，<kbd>Enter</kbd></p>
 <pre><code>Warning: Permanently added &#39;github.com,13.250.177.223&#39; (RSA) to the list of known hosts.
-Hi &lt;user_name&gt;! You&#39;ve successfully authenticated, but GitHub does not provide shell access.</code></pre>
+Hi &lt;user_name&gt;! You&#39;ve successfully authenticated, but GitHub does not provide shell access.
+</code></pre>
 <p>连接成功</p>
 <h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><p>可以在 <code>_config.yml</code> 中修改大部分的配置，这里只列举常用的</p>
 <h2 id="网站"><a href="#网站" class="headerlink" title="网站"></a>网站</h2><table>
@@ -478,7 +445,8 @@ Hi &lt;user_name&gt;! You&#39;ve successfully authenticated, but GitHub does not
 <pre><code># 比如，一个页面的永久链接是 http://example.com/foo/bar/index.html
 pretty_urls:
   trailing_index: false
-# 此时页面的永久链接会变为 http://example.com/foo/bar/</code></pre>
+# 此时页面的永久链接会变为 http://example.com/foo/bar/
+</code></pre>
 <h2 id="分页"><a href="#分页" class="headerlink" title="分页"></a>分页</h2><table>
 <thead>
 <tr>
@@ -516,13 +484,15 @@ pretty_urls:
 </blockquote>
 <h1 id="安装-git-deploy-插件"><a href="#安装-git-deploy-插件" class="headerlink" title="安装 git-deploy 插件"></a>安装 git-deploy 插件</h1><p>因为要通过 Git 将Hexo部署到GitHub，所以要用到 git-deploy</p>
 <pre><code>cd &lt;folder&gt;
-npm install hexo-deployer-git --save</code></pre>
+npm install hexo-deployer-git --save
+</code></pre>
 <p>&lt;folder&gt;为Hexo所在文件夹的详细目录</p>
 <h1 id="调试-Hexo"><a href="#调试-Hexo" class="headerlink" title="调试 Hexo"></a>调试 Hexo</h1><div class="note danger"><p>执行任何 Hexo 的命令都要cd到博客所在文件夹，为了避免麻烦，我的做法是在博客根目录下建立一个bat文件，内容改为cmd，要执行命令只要打开它而不用cd <folder></p>
 </div>
 <p><code>hexo server</code> 或 <code>hexo s</code>  在本地运行网站，当得到</p>
 <pre><code>INFO  Start processing
-INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.</code></pre>
+INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.
+</code></pre>
 <p>可在浏览器打开localhost:4000访问你的博客，用完只要按<kbd>Ctrl</kbd>+<kbd>C</kbd>或直接关闭控制台窗口<br><br></p>
 <p><code>hexo clean</code> 清除缓存文件 (db.json) 和已生成的静态文件 (public)。在某些情况（尤其是更换主题后），如果发现您对站点的更改无论如何也不生效，您可能需要运行该命令。<br><br></p>
 <p><code>hexo generate</code> 或 <code>hexo g</code> 生成静态文件，后面可跟<code> -d</code>、<code> -f</code> 等参数<br>如： </p>
@@ -555,7 +525,7 @@ INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.</code></p
   </li>
   <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://geniucker.now.sh/2020/03/06/Hexo-GitHub-Page%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/" title="Hexo+GitHub Page建立个人博客教程">https://geniucker.now.sh/2020/03/06/Hexo-GitHub-Page建立个人博客教程/</a>
+      <a href="https://geniucker.vercel.app/2020/03/06/Hexo-GitHub-Page%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/" title="Hexo+GitHub Page建立个人博客教程">https://geniucker.vercel.app/2020/03/06/Hexo-GitHub-Page建立个人博客教程/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -592,29 +562,7 @@ INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.</code></p
 
 
 
-    <div class="comments" id="valine-comments"></div>
-
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      const commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
+    <div class="comments" id="valine-comments"></div><script src="/js/comments.js"></script>
 </div>
   </main>
 
@@ -642,40 +590,7 @@ INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.</code></p
   <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@next-theme/pjax@0.4.0/pjax.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/lozad@1.16.0/dist/lozad.min.js"></script>
-<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script>
-var pjax = new Pjax({
-  selectors: [
-    'head title',
-    '.page-configurations',
-    '.main-inner',
-    '.post-toc-wrap',
-    '.languages',
-    '.pjax'
-  ],
-  analytics: false,
-  cacheBust: false,
-  scrollRestoration: false,
-  scrollTo: !CONFIG.bookmark.enable
-});
-
-document.addEventListener('pjax:success', () => {
-  pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
-  NexT.boot.refresh();
-  // Define Motion Sequence & Bootstrap Motion.
-  if (CONFIG.motion.enable) {
-    NexT.motion.integrator
-      .init()
-      .add(NexT.motion.middleWares.subMenu)
-      .add(NexT.motion.middleWares.postList)
-      .bootstrap();
-  }
-  const hasTOC = document.querySelector('.post-toc');
-  document.querySelector('.sidebar-inner').classList.toggle('sidebar-nav-active', hasTOC);
-  document.querySelector(hasTOC ? '.sidebar-nav-toc' : '.sidebar-nav-overview').click();
-  NexT.utils.updateSidebarPosition();
-});
-</script>
-
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
 
   
 <script src="/js/local-search.js"></script>
@@ -691,13 +606,13 @@ document.addEventListener('pjax:success', () => {
 
     <div class="pjax">
 
-  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.0.0/dist/quicklink.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.1.0/dist/quicklink.umd.js"></script>
   <script>
       window.addEventListener('load', () => {
       quicklink.listen({
         timeout : 3000,
         priority: true,
-        ignores : [uri => uri.includes('#'),uri => uri === 'https://geniucker.now.sh/2020/03/06/Hexo-GitHub-Page%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/',]
+        ignores : [uri => uri.includes('#'),uri => uri === 'https://geniucker.vercel.app/2020/03/06/Hexo-GitHub-Page%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/',]
       });
       });
   </script>

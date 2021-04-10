@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.1.1">
+<meta name="generator" content="Hexo 5.4.0">
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/geniucker/source@0.0/logo/apple-touch-icon-next.png">
@@ -16,17 +16,14 @@
 
 
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
 
-<script class="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"geniucker.now.sh","root":"/","images":"/images","scheme":"Gemini","version":"8.2.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
-  </script>
+<meta name="hexo-config" content="{&quot;hostname&quot;:&quot;geniucker.vercel.app&quot;,&quot;root&quot;:&quot;/&quot;,&quot;images&quot;:&quot;/images&quot;,&quot;scheme&quot;:&quot;Gemini&quot;,&quot;version&quot;:&quot;8.3.0&quot;,&quot;exturl&quot;:false,&quot;sidebar&quot;:{&quot;position&quot;:&quot;left&quot;,&quot;display&quot;:&quot;post&quot;,&quot;padding&quot;:18,&quot;offset&quot;:12},&quot;copycode&quot;:true,&quot;bookmark&quot;:{&quot;enable&quot;:false,&quot;color&quot;:&quot;#222&quot;,&quot;save&quot;:&quot;auto&quot;},&quot;fancybox&quot;:false,&quot;mediumzoom&quot;:false,&quot;lazyload&quot;:true,&quot;pangu&quot;:false,&quot;comments&quot;:{&quot;style&quot;:&quot;tabs&quot;,&quot;active&quot;:null,&quot;storage&quot;:true,&quot;lazyload&quot;:false,&quot;nav&quot;:null},&quot;motion&quot;:{&quot;enable&quot;:true,&quot;async&quot;:false,&quot;transition&quot;:{&quot;post_block&quot;:&quot;fadeIn&quot;,&quot;post_header&quot;:&quot;fadeInDown&quot;,&quot;post_body&quot;:&quot;fadeInDown&quot;,&quot;coll_header&quot;:&quot;fadeInLeft&quot;,&quot;sidebar&quot;:&quot;fadeInUp&quot;}},&quot;prism&quot;:false,&quot;i18n&quot;:{&quot;placeholder&quot;:&quot;搜索...&quot;,&quot;empty&quot;:&quot;没有找到任何搜索结果：${query}&quot;,&quot;hits_time&quot;:&quot;找到 ${hits} 个搜索结果（用时 ${time} 毫秒）&quot;,&quot;hits&quot;:&quot;找到 ${hits} 个搜索结果&quot;},&quot;path&quot;:&quot;/search.xml&quot;,&quot;localsearch&quot;:{&quot;enable&quot;:true,&quot;trigger&quot;:&quot;auto&quot;,&quot;top_n_per_article&quot;:1,&quot;unescape&quot;:false,&quot;preload&quot;:false}}">
 <meta name="description" content="&amp;emsp;&amp;emsp;404页面是客户端在浏览网页时，服务器无法正常提供信息，或是服务器无法回应，且不知道原因所返回的页面。据说在第三次科技革命之前，互联网的形态就是一个大型的中央数据库，这个数据库就设置在404房间里面。那时候所有的请求都是由人工手动完成的，如果在数据库中没有找到请求者所需要的文件，或者由于请求者写错了文件编号，用户就会得到一个返回信息：room 404 : file not">
 <meta property="og:type" content="article">
 <meta property="og:title" content="用Chrome小恐龙dino制作Hexo的404页面">
-<meta property="og:url" content="https://geniucker.now.sh/2020/07/23/%E7%94%A8Chrome%E5%B0%8F%E6%81%90%E9%BE%99dino%E5%88%B6%E4%BD%9Chexo%E7%9A%84404%E9%A1%B5%E9%9D%A2/">
+<meta property="og:url" content="https://geniucker.vercel.app/2020/07/23/%E7%94%A8Chrome%E5%B0%8F%E6%81%90%E9%BE%99dino%E5%88%B6%E4%BD%9Chexo%E7%9A%84404%E9%A1%B5%E9%9D%A2/">
 <meta property="og:site_name" content="Geniucker&#39;s Blog">
 <meta property="og:description" content="&amp;emsp;&amp;emsp;404页面是客户端在浏览网页时，服务器无法正常提供信息，或是服务器无法回应，且不知道原因所返回的页面。据说在第三次科技革命之前，互联网的形态就是一个大型的中央数据库，这个数据库就设置在404房间里面。那时候所有的请求都是由人工手动完成的，如果在数据库中没有找到请求者所需要的文件，或者由于请求者写错了文件编号，用户就会得到一个返回信息：room 404 : file not">
 <meta property="og:locale" content="zh_CN">
@@ -41,59 +38,21 @@
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/geniucker/source@0.0.32/image/20200723-1/1.png">
 
 
-<link rel="canonical" href="https://geniucker.now.sh/2020/07/23/%E7%94%A8Chrome%E5%B0%8F%E6%81%90%E9%BE%99dino%E5%88%B6%E4%BD%9Chexo%E7%9A%84404%E9%A1%B5%E9%9D%A2/">
+<link rel="canonical" href="https://geniucker.vercel.app/2020/07/23/%E7%94%A8Chrome%E5%B0%8F%E6%81%90%E9%BE%99dino%E5%88%B6%E4%BD%9Chexo%E7%9A%84404%E9%A1%B5%E9%9D%A2/">
 
 
-<script data-pjax class="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : false,
-    isPost : true,
-    lang   : 'zh-CN'
-  };
-</script>
-<title>用Chrome小恐龙dino制作Hexo的404页面 | Geniucker's Blog</title>
+
+<meta name="hexo-config-page" content="{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:true,&quot;lang&quot;:&quot;zh-CN&quot;}">
+<meta name="hexo-config-calendar" content="">
+<title>用Chrome小恐龙dino制作Hexo的404页面 | Geniucker's Blog</title><script data-pjax src="/js/load-config.js"></script>
   
 
 
 
 
   <noscript>
-  <style>
-  body { margin-top: 2rem; }
-
-  .use-motion .menu-item,
-  .use-motion .sidebar,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header {
-    visibility: visible;
-  }
-
-  .use-motion .header,
-  .use-motion .site-brand-container .toggle,
-  .use-motion .footer { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle,
-  .use-motion .custom-logo-image {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line {
-    transform: scaleX(1);
-  }
-
-  .search-pop-overlay, .sidebar-nav { display: none; }
-  .sidebar-panel { display: block; }
-  </style>
-</noscript>
-
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
 <link rel="alternate" href="/atom.xml" title="Geniucker's Blog" type="application/atom+xml">
 </head>
 
@@ -253,7 +212,7 @@
     </header>
 
     
-  <div class="back-to-top" role="button">
+  <div class="back-to-top" role="button" aria-label="返回顶部">
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
@@ -275,7 +234,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://geniucker.now.sh/2020/07/23/%E7%94%A8Chrome%E5%B0%8F%E6%81%90%E9%BE%99dino%E5%88%B6%E4%BD%9Chexo%E7%9A%84404%E9%A1%B5%E9%9D%A2/">
+    <link itemprop="mainEntityOfPage" href="https://geniucker.vercel.app/2020/07/23/%E7%94%A8Chrome%E5%B0%8F%E6%81%90%E9%BE%99dino%E5%88%B6%E4%BD%9Chexo%E7%9A%84404%E9%A1%B5%E9%9D%A2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/geniucker/source@0.0.23/avatar.webp">
@@ -345,7 +304,7 @@
         <blockquote>
 <p>&emsp;&emsp;404页面是客户端在浏览网页时，服务器无法正常提供信息，或是服务器无法回应，且不知道原因所返回的页面。据说在第三次科技革命之前，互联网的形态就是一个大型的中央数据库，这个数据库就设置在404房间里面。那时候所有的请求都是由人工手动完成的，如果在数据库中没有找到请求者所需要的文件，或者由于请求者写错了文件编号，用户就会得到一个返回信息：room 404 : file not found。404错误信息通常是在目标页面被更改或移除，或客户端输入页面地址错误后显示的页面，人们也就习惯了用404作为服务器未找到文件的错误代码了。当然实际考证传说中的room 404是不存在的，在http请求3位的返回码中，4开头的代表客户错误，5开头代表服务器端错误。<p align="right">——百度百科</p></p>
 </blockquote>
-<a id="more"></a>
+<span id="more"></span>
 <p>对于使用GitHub Pages的用户，Github提供了 <a target="_blank" rel="noopener" href="https://wolf2003rain.github.io/404.html">默认的404页面</a> 。当然，我们也可以自定义一个404页面。下面就教大家如何使用Chrome小恐龙制作404页面。</p>
 <h1 id="预览"><a href="#预览" class="headerlink" title="预览"></a>预览</h1><p><a href="/404.html">我的404页面</a></p>
 <h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1><h2 id="建立-dino-html-文件"><a href="#建立-dino-html-文件" class="headerlink" title="建立 dino.html 文件"></a>建立 <code>dino.html</code> 文件</h2><p>在博客目录的<code>source\_data\</code>下建立 <code>dino.html</code> 文件，内容为：</p>
@@ -379,7 +338,7 @@ img{margin-left: inherit;}
   </li>
   <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://geniucker.now.sh/2020/07/23/%E7%94%A8Chrome%E5%B0%8F%E6%81%90%E9%BE%99dino%E5%88%B6%E4%BD%9Chexo%E7%9A%84404%E9%A1%B5%E9%9D%A2/" title="用Chrome小恐龙dino制作Hexo的404页面">https://geniucker.now.sh/2020/07/23/用Chrome小恐龙dino制作hexo的404页面/</a>
+      <a href="https://geniucker.vercel.app/2020/07/23/%E7%94%A8Chrome%E5%B0%8F%E6%81%90%E9%BE%99dino%E5%88%B6%E4%BD%9Chexo%E7%9A%84404%E9%A1%B5%E9%9D%A2/" title="用Chrome小恐龙dino制作Hexo的404页面">https://geniucker.vercel.app/2020/07/23/用Chrome小恐龙dino制作hexo的404页面/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -413,29 +372,7 @@ img{margin-left: inherit;}
 
 
 
-    <div class="comments" id="valine-comments"></div>
-
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      const commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
+    <div class="comments" id="valine-comments"></div><script src="/js/comments.js"></script>
 </div>
   </main>
 
@@ -463,40 +400,7 @@ img{margin-left: inherit;}
   <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@next-theme/pjax@0.4.0/pjax.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/lozad@1.16.0/dist/lozad.min.js"></script>
-<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script>
-var pjax = new Pjax({
-  selectors: [
-    'head title',
-    '.page-configurations',
-    '.main-inner',
-    '.post-toc-wrap',
-    '.languages',
-    '.pjax'
-  ],
-  analytics: false,
-  cacheBust: false,
-  scrollRestoration: false,
-  scrollTo: !CONFIG.bookmark.enable
-});
-
-document.addEventListener('pjax:success', () => {
-  pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
-  NexT.boot.refresh();
-  // Define Motion Sequence & Bootstrap Motion.
-  if (CONFIG.motion.enable) {
-    NexT.motion.integrator
-      .init()
-      .add(NexT.motion.middleWares.subMenu)
-      .add(NexT.motion.middleWares.postList)
-      .bootstrap();
-  }
-  const hasTOC = document.querySelector('.post-toc');
-  document.querySelector('.sidebar-inner').classList.toggle('sidebar-nav-active', hasTOC);
-  document.querySelector(hasTOC ? '.sidebar-nav-toc' : '.sidebar-nav-overview').click();
-  NexT.utils.updateSidebarPosition();
-});
-</script>
-
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
 
   
 <script src="/js/local-search.js"></script>
@@ -512,13 +416,13 @@ document.addEventListener('pjax:success', () => {
 
     <div class="pjax">
 
-  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.0.0/dist/quicklink.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.1.0/dist/quicklink.umd.js"></script>
   <script>
       window.addEventListener('load', () => {
       quicklink.listen({
         timeout : 3000,
         priority: true,
-        ignores : [uri => uri.includes('#'),uri => uri === 'https://geniucker.now.sh/2020/07/23/%E7%94%A8Chrome%E5%B0%8F%E6%81%90%E9%BE%99dino%E5%88%B6%E4%BD%9Chexo%E7%9A%84404%E9%A1%B5%E9%9D%A2/',]
+        ignores : [uri => uri.includes('#'),uri => uri === 'https://geniucker.vercel.app/2020/07/23/%E7%94%A8Chrome%E5%B0%8F%E6%81%90%E9%BE%99dino%E5%88%B6%E4%BD%9Chexo%E7%9A%84404%E9%A1%B5%E9%9D%A2/',]
       });
       });
   </script>
