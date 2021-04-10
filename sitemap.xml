@@ -172,20 +172,6 @@
 
   
   <url>
-    <loc>https://geniucker.vercel.app/tags/Chrome/</loc>
-    <lastmod>2021-04-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://geniucker.vercel.app/tags/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/</loc>
-    <lastmod>2021-04-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://geniucker.vercel.app/tags/%E5%BB%BA%E7%AB%99/</loc>
     <lastmod>2021-04-10</lastmod>
     <changefreq>daily</changefreq>
@@ -201,6 +187,20 @@
   
   <url>
     <loc>https://geniucker.vercel.app/tags/GitHub-Page/</loc>
+    <lastmod>2021-04-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://geniucker.vercel.app/tags/Chrome/</loc>
+    <lastmod>2021-04-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://geniucker.vercel.app/tags/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/</loc>
     <lastmod>2021-04-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -279,14 +279,14 @@
 
   
   <url>
-    <loc>https://geniucker.vercel.app/categories/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7%E5%8F%8A%E5%B7%A5%E5%85%B7/</loc>
+    <loc>https://geniucker.vercel.app/categories/Hexo%E5%BB%BA%E7%AB%99/</loc>
     <lastmod>2021-04-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://geniucker.vercel.app/categories/Hexo%E5%BB%BA%E7%AB%99/</loc>
+    <loc>https://geniucker.vercel.app/categories/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7%E5%8F%8A%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2021-04-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
